@@ -8,6 +8,13 @@ class HistoryMessage(BaseModel):
     role: Literal["user", "assistant"]
     content: str = Field(min_length=1, max_length=4000)
 
+    @field_validator("content")
+    @classmethod
+    def nonempty(cls, value: str) -> str:
+        if not value.strip():
+            raise ValueError("El historial no puede contener mensajes vacíos")
+        return value
+
 
 class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=4000)
@@ -51,6 +58,14 @@ class Trace(BaseModel):
     model: str
     resolved_model: str
     timings_ms: dict[str, int]
+    preparation_status: Literal["complete"] = "complete"
+    retrieval_status: Literal["complete", "empty"] = "complete"
+    generation_status: Literal["complete", "skipped"] = "complete"
+    route: str | None = None
+    template_answer: bool = False
+    llm_calls: int = 0
+    retries: int = 0
+    chroma_operations: int = 0
 
 
 class ChatResponse(BaseModel):
@@ -65,6 +80,9 @@ class PreparedQuery(BaseModel):
     language: Literal["es", "en"]
     query_en: str
     status: str
+    intent: str | None = None
+    llm_calls: int = 0
+    retries: int = 0
 
 
 class QueryPreparer(Protocol):
@@ -78,7 +96,9 @@ class EmbeddingProvider(Protocol):
 
 class VectorRepository(Protocol):
     def search(self, vector: list[float], top_k: int, cve_ids: list[str]) -> list[Source]: ...
-    def descriptions(self, cve_ids: list[str]) -> list[Source]: ...
+    def descriptions(self, cve_id: str, kind: str) -> list[Source]: ...
+    def grouped(self, cve_id: str, kinds: tuple[str, ...]) -> list[Source]: ...
+    def ping(self) -> None: ...
     def check(self) -> dict[str, Any]: ...
 
 
@@ -86,3 +106,18 @@ class LLMProvider(Protocol):
     resolved_model: str
     async def chat(self, system: str, user: str, *, max_tokens: int) -> str: ...
     async def check(self) -> bool: ...
+
+
+class HealthResponse(BaseModel):
+    backend: Literal["available"] = "available"
+    chroma: Literal["available", "unavailable"] = "unavailable"
+    collection: str
+    collection_status: Literal["available", "unavailable"] = "unavailable"
+    embeddings: Literal["available", "unavailable"] = "unavailable"
+    llm: Literal["available", "unavailable"] = "unavailable"
+    model: str
+    document_count: int | None = None
+    chroma_reason: str | None = None
+    collection_reason: str | None = None
+    embeddings_reason: str | None = None
+    llm_reason: str | None = None

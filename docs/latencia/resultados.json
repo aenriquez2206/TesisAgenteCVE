@@ -1,0 +1,383 @@
+{
+  "baseline": {
+    "latency": {
+      "successes": 39,
+      "errors": 21,
+      "successful_total": {
+        "count": 39,
+        "median_ms": 7579,
+        "p95_ms": 14250
+      },
+      "stages": {
+        "preparation": {
+          "count": 39,
+          "median_ms": 1946,
+          "p95_ms": 2837
+        },
+        "embedding": {
+          "count": 39,
+          "median_ms": 17,
+          "p95_ms": 24
+        },
+        "retrieval": {
+          "count": 39,
+          "median_ms": 88,
+          "p95_ms": 107
+        },
+        "generation": {
+          "count": 39,
+          "median_ms": 4791,
+          "p95_ms": 13395
+        },
+        "model_wait": {
+          "count": 0,
+          "median_ms": null,
+          "p95_ms": null
+        },
+        "validation": {
+          "count": 0,
+          "median_ms": null,
+          "p95_ms": null
+        }
+      },
+      "routes": {
+        "legacy": {
+          "count": 39,
+          "median_ms": 7579,
+          "p95_ms": 14250
+        }
+      }
+    },
+    "supported_retrieval_pass_rate": 0.66
+  },
+  "optimized": {
+    "latency": {
+      "successes": 56,
+      "errors": 4,
+      "successful_total": {
+        "count": 56,
+        "median_ms": 2674,
+        "p95_ms": 7291
+      },
+      "stages": {
+        "preparation": {
+          "count": 56,
+          "median_ms": 0,
+          "p95_ms": 2420
+        },
+        "embedding": {
+          "count": 56,
+          "median_ms": 14,
+          "p95_ms": 15
+        },
+        "retrieval": {
+          "count": 56,
+          "median_ms": 52,
+          "p95_ms": 97
+        },
+        "generation": {
+          "count": 56,
+          "median_ms": 2634,
+          "p95_ms": 5100
+        },
+        "model_wait": {
+          "count": 56,
+          "median_ms": 0,
+          "p95_ms": 0
+        },
+        "validation": {
+          "count": 56,
+          "median_ms": 0,
+          "p95_ms": 0
+        }
+      },
+      "routes": {
+        "cvss_template": {
+          "count": 5,
+          "median_ms": 10,
+          "p95_ms": 11
+        },
+        "exact_cve": {
+          "count": 8,
+          "median_ms": 2954,
+          "p95_ms": 4189
+        },
+        "missing_record_template": {
+          "count": 3,
+          "median_ms": 77,
+          "p95_ms": 110
+        },
+        "semantic": {
+          "count": 40,
+          "median_ms": 2847,
+          "p95_ms": 7291
+        }
+      }
+    },
+    "supported_retrieval_pass_rate": 0.962,
+    "unexpected_errors": [
+      "C51",
+      "C52",
+      "C60"
+    ]
+  },
+  "matched_successful_cases": {
+    "count": 38,
+    "baseline": {
+      "count": 38,
+      "median_ms": 7370,
+      "p95_ms": 12109
+    },
+    "optimized": {
+      "count": 38,
+      "median_ms": 2656,
+      "p95_ms": 5157
+    }
+  },
+  "supported_generated_responses": {
+    "successes": 41,
+    "errors": 0,
+    "successful_total": {
+      "count": 41,
+      "median_ms": 2776,
+      "p95_ms": 4699
+    },
+    "stages": {
+      "preparation": {
+        "count": 41,
+        "median_ms": 0,
+        "p95_ms": 0
+      },
+      "embedding": {
+        "count": 41,
+        "median_ms": 14,
+        "p95_ms": 15
+      },
+      "retrieval": {
+        "count": 41,
+        "median_ms": 53,
+        "p95_ms": 97
+      },
+      "generation": {
+        "count": 41,
+        "median_ms": 2713,
+        "p95_ms": 4623
+      },
+      "model_wait": {
+        "count": 41,
+        "median_ms": 0,
+        "p95_ms": 0
+      },
+      "validation": {
+        "count": 41,
+        "median_ms": 0,
+        "p95_ms": 0
+      }
+    },
+    "routes": {
+      "exact_cve": {
+        "count": 7,
+        "median_ms": 3183,
+        "p95_ms": 4189
+      },
+      "semantic": {
+        "count": 34,
+        "median_ms": 2726,
+        "p95_ms": 5157
+      }
+    }
+  },
+  "phase_samples": {
+    "first_request": {
+      "successes": 1,
+      "errors": 0,
+      "successful_total": {
+        "count": 1,
+        "median_ms": 3814,
+        "p95_ms": 3814
+      },
+      "stages": {
+        "preparation": {
+          "count": 1,
+          "median_ms": 0,
+          "p95_ms": 0
+        },
+        "embedding": {
+          "count": 1,
+          "median_ms": 0,
+          "p95_ms": 0
+        },
+        "retrieval": {
+          "count": 1,
+          "median_ms": 19,
+          "p95_ms": 19
+        },
+        "generation": {
+          "count": 1,
+          "median_ms": 3772,
+          "p95_ms": 3772
+        },
+        "model_wait": {
+          "count": 1,
+          "median_ms": 0,
+          "p95_ms": 0
+        },
+        "validation": {
+          "count": 1,
+          "median_ms": 0,
+          "p95_ms": 0
+        }
+      },
+      "routes": {
+        "exact_cve": {
+          "count": 1,
+          "median_ms": 3814,
+          "p95_ms": 3814
+        }
+      }
+    },
+    "warm": {
+      "successes": 18,
+      "errors": 0,
+      "successful_total": {
+        "count": 18,
+        "median_ms": 2362,
+        "p95_ms": 5688
+      },
+      "stages": {
+        "preparation": {
+          "count": 18,
+          "median_ms": 0,
+          "p95_ms": 0
+        },
+        "embedding": {
+          "count": 18,
+          "median_ms": 12,
+          "p95_ms": 14
+        },
+        "retrieval": {
+          "count": 18,
+          "median_ms": 34,
+          "p95_ms": 89
+        },
+        "generation": {
+          "count": 18,
+          "median_ms": 2315,
+          "p95_ms": 5632
+        },
+        "model_wait": {
+          "count": 18,
+          "median_ms": 0,
+          "p95_ms": 0
+        },
+        "validation": {
+          "count": 18,
+          "median_ms": 0,
+          "p95_ms": 0
+        }
+      },
+      "routes": {
+        "cvss_template": {
+          "count": 3,
+          "median_ms": 13,
+          "p95_ms": 15
+        },
+        "exact_cve": {
+          "count": 3,
+          "median_ms": 2873,
+          "p95_ms": 3001
+        },
+        "semantic": {
+          "count": 12,
+          "median_ms": 3088,
+          "p95_ms": 5688
+        }
+      }
+    },
+    "two_users": {
+      "successes": 6,
+      "errors": 0,
+      "successful_total": {
+        "count": 6,
+        "median_ms": 3518,
+        "p95_ms": 5041
+      },
+      "stages": {
+        "preparation": {
+          "count": 6,
+          "median_ms": 0,
+          "p95_ms": 0
+        },
+        "embedding": {
+          "count": 6,
+          "median_ms": 7,
+          "p95_ms": 17
+        },
+        "retrieval": {
+          "count": 6,
+          "median_ms": 56,
+          "p95_ms": 101
+        },
+        "generation": {
+          "count": 6,
+          "median_ms": 3451,
+          "p95_ms": 4927
+        },
+        "model_wait": {
+          "count": 6,
+          "median_ms": 1082,
+          "p95_ms": 3031
+        },
+        "validation": {
+          "count": 6,
+          "median_ms": 0,
+          "p95_ms": 0
+        }
+      },
+      "routes": {
+        "exact_cve": {
+          "count": 3,
+          "median_ms": 2960,
+          "p95_ms": 3146
+        },
+        "semantic": {
+          "count": 3,
+          "median_ms": 4571,
+          "p95_ms": 5041
+        }
+      }
+    }
+  },
+  "backend_startup_dependencies_ms": {
+    "collection": 50,
+    "embeddings": 257
+  },
+  "acceptance": {
+    "retrieval_at_least_90_percent": true,
+    "supported_retrieval_regressions": [],
+    "retrieval_p95_le_1s": true,
+    "template_p95_le_2s": true,
+    "supported_generated_total_p95_le_10s": true,
+    "semantic_quality": "pending: C13, C53, C56; unsupported filter C37 also fails semantic review",
+    "collection_unchanged": true
+  },
+  "checks": {
+    "backend_tests_passed": 56,
+    "frontend_tests_passed": 9,
+    "frontend_build": "passed",
+    "docker_compose_config": "passed"
+  },
+  "measurement_conditions": {
+    "runtime_context_tokens": 8192,
+    "parallel_slots": 1,
+    "threads": 8,
+    "gpu_layers": "all",
+    "prompt_cache_mib": 256,
+    "original_charger": true,
+    "performance_mode": true,
+    "context_chars": 6000,
+    "code": "final implementation",
+    "single_active_generation": true,
+    "runtime_process_verified_before_and_during": true
+  }
+}

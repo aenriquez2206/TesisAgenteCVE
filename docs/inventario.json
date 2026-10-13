@@ -1,0 +1,2427 @@
+{
+  "excluded_directories": [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "dist",
+    "node_modules"
+  ],
+  "files": [
+    {
+      "path": ".env",
+      "destination": ".env",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": ".env.example",
+      "destination": ".env.example",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": ".gitignore",
+      "destination": ".gitignore",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "README.md",
+      "destination": "README.md",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "config.yaml",
+      "destination": "config.yaml",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "docker-compose.yml",
+      "destination": "docker-compose.yml",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "migration-manifest.json",
+      "destination": "migration-manifest.json",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/.dockerignore",
+      "destination": "backend/.dockerignore",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/Dockerfile",
+      "destination": "backend/Dockerfile",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "destination": "backend/requirements.txt",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/__init__.py",
+      "destination": "backend/app/__init__.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/config.py",
+      "destination": "backend/app/config.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/contracts.py",
+      "destination": "backend/app/contracts.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/errors.py",
+      "destination": "backend/app/errors.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/logging_config.py",
+      "destination": "backend/app/logging_config.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/main.py",
+      "destination": "backend/app/main.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/adapters/__init__.py",
+      "destination": "backend/app/adapters/__init__.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/adapters/chroma_repository.py",
+      "destination": "backend/app/adapters/chroma_repository.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/adapters/embeddings.py",
+      "destination": "backend/app/adapters/embeddings.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/adapters/model_runner.py",
+      "destination": "backend/app/adapters/model_runner.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/api/__init__.py",
+      "destination": "backend/app/api/__init__.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/services/__init__.py",
+      "destination": "backend/app/services/__init__.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/services/chat.py",
+      "destination": "backend/app/services/chat.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/app/services/query_preparer.py",
+      "destination": "backend/app/services/query_preparer.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "backend/tests/test_chat.py",
+      "destination": "backend/tests/test_chat.py",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chroma_data/chroma.sqlite3",
+      "destination": "chroma_data/chroma.sqlite3",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/data_level0.bin",
+      "destination": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/data_level0.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/header.bin",
+      "destination": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/header.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/index_metadata.pickle",
+      "destination": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/index_metadata.pickle",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/length.bin",
+      "destination": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/length.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/link_lists.bin",
+      "destination": "chroma_data/421c1f89-ce2b-4278-a912-05fe1165f517/link_lists.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/data_level0.bin",
+      "destination": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/data_level0.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/header.bin",
+      "destination": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/header.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/index_metadata.pickle",
+      "destination": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/index_metadata.pickle",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/length.bin",
+      "destination": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/length.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/link_lists.bin",
+      "destination": "chroma_data/dfdafa40-8f94-45a7-9264-32e9391a83e5/link_lists.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/data_level0.bin",
+      "destination": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/data_level0.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/header.bin",
+      "destination": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/header.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/index_metadata.pickle",
+      "destination": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/index_metadata.pickle",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/length.bin",
+      "destination": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/length.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/link_lists.bin",
+      "destination": "chroma_data/e932060c-c6fb-4a91-b82b-af521d35182c/link_lists.bin",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "chromadb-ui/.dockerignore",
+      "destination": "chromadb-ui/.dockerignore",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/.gitignore",
+      "destination": "chromadb-ui/.gitignore",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/.prettierrc",
+      "destination": "chromadb-ui/.prettierrc",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/Dockerfile",
+      "destination": "chromadb-ui/Dockerfile",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/LICENSE",
+      "destination": "chromadb-ui/LICENSE",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/README.md",
+      "destination": "chromadb-ui/README.md",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/config.yaml",
+      "destination": "chromadb-ui/config.yaml",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/docker-compose.yml",
+      "destination": "chromadb-ui/docker-compose.yml",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/index.html",
+      "destination": "chromadb-ui/index.html",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/nginx.conf",
+      "destination": "chromadb-ui/nginx.conf",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/package-lock.json",
+      "destination": "chromadb-ui/package-lock.json",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/package.json",
+      "destination": "chromadb-ui/package.json",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/postcss.config.js",
+      "destination": "chromadb-ui/postcss.config.js",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/tailwind.config.js",
+      "destination": "chromadb-ui/tailwind.config.js",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/vite.config.js",
+      "destination": "chromadb-ui/vite.config.js",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/.github/workflows/deploy.yml",
+      "destination": "chromadb-ui/.github/workflows/deploy.yml",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/docs/showcase/01-preview.png",
+      "destination": "chromadb-ui/docs/showcase/01-preview.png",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/docs/showcase/02-preview.png",
+      "destination": "chromadb-ui/docs/showcase/02-preview.png",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/docs/showcase/03-preview.png",
+      "destination": "chromadb-ui/docs/showcase/03-preview.png",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/docs/showcase/04-preview.png",
+      "destination": "chromadb-ui/docs/showcase/04-preview.png",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/docs/showcase/05-preview.png",
+      "destination": "chromadb-ui/docs/showcase/05-preview.png",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/public/chroma.png",
+      "destination": "chromadb-ui/public/chroma.png",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/public/favicon.ico",
+      "destination": "chromadb-ui/public/favicon.ico",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/src/App.vue",
+      "destination": "chromadb-ui/src/App.vue",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/src/main.js",
+      "destination": "chromadb-ui/src/main.js",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "chromadb-ui/src/style.css",
+      "destination": "chromadb-ui/src/style.css",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "docs/migracion.md",
+      "destination": "docs/migracion.md",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "docs/referencia/cve-intelligence.html",
+      "destination": "docs/referencia/cve-intelligence.html",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/.dockerignore",
+      "destination": "frontend/.dockerignore",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/Dockerfile",
+      "destination": "frontend/Dockerfile",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/index.html",
+      "destination": "frontend/index.html",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "destination": "frontend/package-lock.json",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/package.json",
+      "destination": "frontend/package.json",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "destination": "frontend/tsconfig.json",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/tsconfig.tsbuildinfo",
+      "destination": "frontend/tsconfig.tsbuildinfo",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "destination": "frontend/vite.config.ts",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "destination": "frontend/src/main.tsx",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "destination": "frontend/src/vite-env.d.ts",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/src/api/client.ts",
+      "destination": "frontend/src/api/client.ts",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/src/components/ChatMessage.tsx",
+      "destination": "frontend/src/components/ChatMessage.tsx",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/src/components/Evidence.tsx",
+      "destination": "frontend/src/components/Evidence.tsx",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/src/hooks/useConversations.ts",
+      "destination": "frontend/src/hooks/useConversations.ts",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/src/styles/main.css",
+      "destination": "frontend/src/styles/main.css",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "frontend/src/types/api.ts",
+      "destination": "frontend/src/types/api.ts",
+      "treatment": "retain; update application/config/docs as needed"
+    },
+    {
+      "path": "preprosesamiento/.gitignore",
+      "destination": "preprosesamiento/.gitignore",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/README.md",
+      "destination": "preprosesamiento/README.md",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/cargar_catalogo.ipynb",
+      "destination": "preprosesamiento/cargar_catalogo.ipynb",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/extracionPrubea.py",
+      "destination": "preprosesamiento/extracionPrubea.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/indexar_chroma.ipynb",
+      "destination": "preprosesamiento/indexar_chroma.ipynb",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/requirements.txt",
+      "destination": "preprosesamiento/requirements.txt",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/ejecutar_notebook.py",
+      "destination": "preprosesamiento/chroma/ejecutar_notebook.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/indexacion.py",
+      "destination": "preprosesamiento/chroma/indexacion.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/test_indexacion.py",
+      "destination": "preprosesamiento/chroma/test_indexacion.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/aceptacion.json",
+      "destination": "preprosesamiento/chroma/salidas/aceptacion.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/informe_indexacion.json",
+      "destination": "preprosesamiento/chroma/salidas/informe_indexacion.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/documentos.json.gz",
+      "destination": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/documentos.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings.npy",
+      "destination": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings.npy",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_orden.npy",
+      "destination": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_orden.npy",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_progreso.json",
+      "destination": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_progreso.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_verificados.json",
+      "destination": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_verificados.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/estado.json",
+      "destination": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/estado.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/informe.json",
+      "destination": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/informe.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/manifiesto.json",
+      "destination": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/manifiesto.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/documentos.json.gz",
+      "destination": "preprosesamiento/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/documentos.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/manifiesto.json",
+      "destination": "preprosesamiento/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/manifiesto.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/coleccion.json.gz",
+      "destination": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/coleccion.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/manifiesto.json",
+      "destination": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/manifiesto.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/coleccion.json.gz",
+      "destination": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/coleccion.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/manifiesto.json",
+      "destination": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/manifiesto.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/pruebasTemporales/prueba1.py",
+      "destination": "preprosesamiento/pruebasTemporales/prueba1.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/pruebasTemporales/prueba2.py",
+      "destination": "preprosesamiento/pruebasTemporales/prueba2.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/pruebasTemporales/prueba3.py",
+      "destination": "preprosesamiento/pruebasTemporales/prueba3.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/README.md",
+      "destination": "preprosesamiento/sqlite/README.md",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/carga_catalogo.py",
+      "destination": "preprosesamiento/sqlite/carga_catalogo.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/catalogo.sqlite3",
+      "destination": "preprosesamiento/sqlite/catalogo.sqlite3",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/consultas.sql",
+      "destination": "preprosesamiento/sqlite/consultas.sql",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/crear_base.py",
+      "destination": "preprosesamiento/sqlite/crear_base.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/diccionario_datos.md",
+      "destination": "preprosesamiento/sqlite/diccionario_datos.md",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/ejecutar_notebook.py",
+      "destination": "preprosesamiento/sqlite/ejecutar_notebook.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/informe_revision.md",
+      "destination": "preprosesamiento/sqlite/informe_revision.md",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/revisar_fuentes.py",
+      "destination": "preprosesamiento/sqlite/revisar_fuentes.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/revision_fuentes.json",
+      "destination": "preprosesamiento/sqlite/revision_fuentes.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/schema.sql",
+      "destination": "preprosesamiento/sqlite/schema.sql",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/test_carga.py",
+      "destination": "preprosesamiento/sqlite/test_carga.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/test_schema.py",
+      "destination": "preprosesamiento/sqlite/test_schema.py",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/NVDExample.json",
+      "destination": "preprosesamiento/sqlite/fuentes/NVDExample.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/capec.csv",
+      "destination": "preprosesamiento/sqlite/fuentes/capec.csv",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/cwe_hardware.csv",
+      "destination": "preprosesamiento/sqlite/fuentes/cwe_hardware.csv",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/cwe_software.csv",
+      "destination": "preprosesamiento/sqlite/fuentes/cwe_software.csv",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/files_exploits.csv",
+      "destination": "preprosesamiento/sqlite/fuentes/files_exploits.csv",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/informe_carga.json",
+      "destination": "preprosesamiento/sqlite/salidas/informe_carga.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/informe_carga.md",
+      "destination": "preprosesamiento/sqlite/salidas/informe_carga.md",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/informe_carga_20261006T035917975027Z.json",
+      "destination": "preprosesamiento/sqlite/salidas/informe_carga_20261006T035917975027Z.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/seleccion_nvd.json",
+      "destination": "preprosesamiento/sqlite/salidas/seleccion_nvd.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/manifiesto.json",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/manifiesto.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0006000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0006000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0006000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0006000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0006000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0006000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0008000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0008000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0006000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0006000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0008000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0008000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0006000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0006000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0008000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0008000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0010000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0010000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0012000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0012000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0002000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0002000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0004000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0004000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0006000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0006000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0008000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0008000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0010000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0010000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0012000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0012000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0014000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0014000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-10-0000000.json.gz",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-10-0000000.json.gz",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/manifiesto.json",
+      "destination": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/manifiesto.json",
+      "treatment": "preserve data"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/respaldos/catalogo_20261006T035917975027Z.sqlite3",
+      "destination": "preprosesamiento/sqlite/salidas/respaldos/catalogo_20261006T035917975027Z.sqlite3",
+      "treatment": "preserve data"
+    }
+  ],
+  "migration_checks": [
+    {
+      "path": "preprosesamiento/.gitignore",
+      "matches": true,
+      "sha256": "18636246ab1c99e12b1f308b14cbd085a735d0e15de89e55348fb15e0a211975",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/README.md",
+      "matches": false,
+      "sha256": "fca430d8ecde8d0768185aff718dfa5358ae52fa655db4fde8f75f9037ed7903",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/cargar_catalogo.ipynb",
+      "matches": false,
+      "sha256": "adb1178882647356ea044ec2433cf336892497ad5160ea36e73ad4740ab76199",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/chroma/__pycache__/indexacion.cpython-312.pyc",
+      "matches": true,
+      "sha256": "39721ff82814ebdba186311542ff72252bab59818e49a8bdf661ed21e65e9ea9",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/chroma/__pycache__/test_indexacion.cpython-312.pyc",
+      "matches": false,
+      "sha256": "42e4c3a3ec0fc6bb1f90bdf91e6ebf7fb5500096aa1ab540ce01fe0f611b2617",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/chroma/ejecutar_notebook.py",
+      "matches": true,
+      "sha256": "40b1a9db6272e911275eec48ff0faa9a40552aa13c8bf41af709d7c043de64bb",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/chroma/indexacion.py",
+      "matches": true,
+      "sha256": "a57173f62a276038f545dcfcc1e0d7300216555a316cdf54141d6cbe194a65f6",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/aceptacion.json",
+      "matches": true,
+      "sha256": "42f43f0677d76c2aa2cade210f64ecf5801de26697cf71f3c547d7d3776d5323",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/documentos.json.gz",
+      "matches": true,
+      "sha256": "44279cb1c0b94db6b10c1d22eb137899a320cc702560e82b846b0ad5d007d54b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings.npy",
+      "matches": true,
+      "sha256": "450d6c1b0274ecda9ef974f33db4504843727942418cc755cd64731ba023695d",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_orden.npy",
+      "matches": true,
+      "sha256": "ab4ec022e95b3a103cb61f2b4fe4ce386ec37e298acdfc14372e4e94ea3e944a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_progreso.json",
+      "matches": true,
+      "sha256": "545ea30cc27f13f2a1a512f9f15d9874fb52c0792b0c189a27b42892995d6d93",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_verificados.json",
+      "matches": true,
+      "sha256": "0d25909c5828ef2c8369a3624a209422d61f94da787dfea1b5bdf1f2ea67328e",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/estado.json",
+      "matches": true,
+      "sha256": "c32ff973fb8a83d20ca04f7c1bc859b4b68df6e3dd8fd40b2280befdf15a01ba",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/informe.json",
+      "matches": true,
+      "sha256": "a86d6d30eab636b793d76f90bbb16116ace2ee5c468a986de12bec37f405261b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/manifiesto.json",
+      "matches": true,
+      "sha256": "1d9a86612739558793cb320d684de345ac6bff47789d3744fcddc179211e304f",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/documentos.json.gz",
+      "matches": true,
+      "sha256": "05e43f0947aaa9d0169438c68797a98b79d495291cbad9610ac6a43cbd357588",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/manifiesto.json",
+      "matches": true,
+      "sha256": "92d09d20a48b80dd27ee585804556ac58c6f0bfd8b021e0cd8901f96f1632907",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/informe_indexacion.json",
+      "matches": true,
+      "sha256": "a86d6d30eab636b793d76f90bbb16116ace2ee5c468a986de12bec37f405261b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/coleccion.json.gz",
+      "matches": true,
+      "sha256": "e846741850b2b864cec5888d59c1eeac7c4e4aa6e8cc292de038cc91bb6c91f0",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/manifiesto.json",
+      "matches": true,
+      "sha256": "03f84fa32ae4b40cc854132bcd55d75edbfa23e2f18a3aa970e226bdd49391cf",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/coleccion.json.gz",
+      "matches": true,
+      "sha256": "27faae60ba466d8ba1e8cc17a27211d27022a93b0ce963b148fab80cf7fa3c2b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/manifiesto.json",
+      "matches": true,
+      "sha256": "4064634211ae1eb73de76af72c06b2a2658e60ea8a18f406174da43ca3e5d81d",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/chroma/test_indexacion.py",
+      "matches": false,
+      "sha256": "5ae6f2122110ace9c97d5daac9710872d596c40e4edbcb2b2abaf80f438d252d",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/indexar_chroma.ipynb",
+      "matches": false,
+      "sha256": "5e0e616c6be2a7af18083a8a3a9de251aee7cc933591d64c183e2f34f5f4ef19",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/requirements.txt",
+      "matches": true,
+      "sha256": "3952aaf94c5fd3334b9df2be794c07178aa9a18897647258afa2b5e659f2d65a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/README.md",
+      "matches": false,
+      "sha256": "7f65f576f41f1e458199467f0f2131c09ad9cb9dc7e3d6b690ef7db677779738",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/__pycache__/carga_catalogo.cpython-312.pyc",
+      "matches": true,
+      "sha256": "66dcf5c55a36f0ca34ccc04ee28ac5cf24cbf53761650594426c16ad4d14bf1c",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/__pycache__/crear_base.cpython-312.pyc",
+      "matches": true,
+      "sha256": "863b97bf7666aab5aa5721a67ef086eeb3ffd9061a73052284290d03616f211f",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/__pycache__/revisar_fuentes.cpython-312.pyc",
+      "matches": true,
+      "sha256": "950b14f1bfc1201e5f0dc71002a193fef503b822287312b46fe96cc44860873c",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/__pycache__/test_carga.cpython-312.pyc",
+      "matches": true,
+      "sha256": "b6839ac027e04f429f68a3d380cf77ebb78252617e439d170c522b5ed4adc7b6",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/__pycache__/test_schema.cpython-312.pyc",
+      "matches": true,
+      "sha256": "affca75243d81563d9d010e49bd4a8b6fe4e6ddc54f3eefdc7d8af37bacea24a",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/carga_catalogo.py",
+      "matches": true,
+      "sha256": "864ef4590db573faf686122b7859b56cb14011dfbff1638117def159b5e067c9",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/catalogo.sqlite3",
+      "matches": true,
+      "sha256": "f3bd2331f33e110782b116bb60d1d27ff77b8bbb51601578657da08c5cefb985",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/consultas.sql",
+      "matches": true,
+      "sha256": "abbac2cd19e4e5a53a8c3a697aea2ff96b91157f277effbe815c39bf4174efa8",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/crear_base.py",
+      "matches": true,
+      "sha256": "170fbab1ef42f1a931b2c33cad70370c5fbb70bbe4ced34681dbb70c1afd84e0",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/diccionario_datos.md",
+      "matches": true,
+      "sha256": "3c94396617ca19df8590efee1e81e36f0ac74ad9e08d50b2d4ae304deb854d79",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/ejecutar_notebook.py",
+      "matches": true,
+      "sha256": "43466958d785163c6d08f3d306b4cd2ae57d8307a962904739ce26bf98a2bf4c",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/NVDExample.json",
+      "matches": true,
+      "sha256": "44802bbaabe6106d96550fe1c5a8ca52869b815f165822ecb235cf88b3febf92",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/capec.csv",
+      "matches": true,
+      "sha256": "6ba3971aefee4c2ce4d29c2b50b85acab15016133f1f60a765229d780af4f44f",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/cwe_hardware.csv",
+      "matches": true,
+      "sha256": "54fed63711677c2e7aed1164844da5ca2377cc7fac4d5e09e6ffad8c77d17b27",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/cwe_software.csv",
+      "matches": true,
+      "sha256": "f4a30c7eaf1c8a4a6045b3be48571f74ee6e23cdbd768e3c40f48f5e67e02101",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/fuentes/files_exploits.csv",
+      "matches": true,
+      "sha256": "49ed79cb1bf0878931793318485d21cdc947f1d91ef8accbd09d5d4bf99991b8",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/informe_revision.md",
+      "matches": false,
+      "sha256": "76a2477180e874ad3e418a4a837cb74b43650951e7302a01602cd5b0c3b6dcd3",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/revisar_fuentes.py",
+      "matches": true,
+      "sha256": "7457f28063fd46d4f4e09a1ca46c1dc057863ea95c3c47acf6f982f1fcb6708a",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/revision_fuentes.json",
+      "matches": true,
+      "sha256": "1c100b3f48d1122d8ff9af67f25a616b05d2ce0d9d267b664de0c2b863799a00",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0000000.json.gz",
+      "matches": true,
+      "sha256": "142e7cc6b5037a914b470f9c40f312f0d9ef38ddc6c417d581e00617ca45096c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0002000.json.gz",
+      "matches": true,
+      "sha256": "083dbedf404671a64be8f4a6d00afb732ed82e7161d94e62b2800cc9e1344515",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0000000.json.gz",
+      "matches": true,
+      "sha256": "98b981e285bd2b59ae8a63c39c58d014b88897e7e85c19b8e880d40ee4cbf35d",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0002000.json.gz",
+      "matches": true,
+      "sha256": "83b086e7fbc629c82679651c8b6d41c8803d88fbd748a03b85815cbe78346757",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0000000.json.gz",
+      "matches": true,
+      "sha256": "f0dba05f2272a5b8922c037eb4528bd130d745051daf8925cd3bd71ec96e3811",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0002000.json.gz",
+      "matches": true,
+      "sha256": "d93775aa78963de5619aa0bf033d8863a5901170c26b63064878ba430ee5008d",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0000000.json.gz",
+      "matches": true,
+      "sha256": "e2c3c3cc72f4a41ca3225e86c88a918dfa0376e24fce44f72a8e143541ca4897",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0002000.json.gz",
+      "matches": true,
+      "sha256": "c07dec19b59e7076609f5c6bba380f0ece9e7c1b3ca6abd75fd11b15da9fa6cc",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0000000.json.gz",
+      "matches": true,
+      "sha256": "8b17431adfdcadc3163764ed97385dc5c46d24b213e0321b7f0127f87ffa1e07",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0002000.json.gz",
+      "matches": true,
+      "sha256": "da0b89856eee64e4b74ae6a5997b30f73f9572359ac0c20319586021be542f4b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0000000.json.gz",
+      "matches": true,
+      "sha256": "d7ef208806da331d3272e60fe01162fa3e28cafdcf9efee8c7e91680f98f4cb7",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0002000.json.gz",
+      "matches": true,
+      "sha256": "029d95c6e9a994b8349c8850ffbbe0ffa5d515007f2e23698136a8e82f38b0e5",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0000000.json.gz",
+      "matches": true,
+      "sha256": "378406f94eaa7ac24db2e74a76fea6cfc3c4a20d4717d4f8acc0dc0298792907",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0002000.json.gz",
+      "matches": true,
+      "sha256": "550b2e0689115cc4e0120c9be5cafbea89f074fccacd572d77f3d1eefabe8a29",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0000000.json.gz",
+      "matches": true,
+      "sha256": "fa6d9fe10b9aef3cf90069b367aab6160ad55fd3481b725529c9a36d35ff5761",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0002000.json.gz",
+      "matches": true,
+      "sha256": "3e01373f445052204097ea082dca122babe07178e6ce0d364aa2331c7b624245",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0000000.json.gz",
+      "matches": true,
+      "sha256": "ec3945aabea43fed95e9a6d0b4c368a8d61b2218d4d34ef8f792ccdc39b13c72",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0002000.json.gz",
+      "matches": true,
+      "sha256": "09b2cb48e4622c3152b1421752efcb8e9aa0fb2140a82e2a8c903abc33ac6930",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0000000.json.gz",
+      "matches": true,
+      "sha256": "87ec61faae2c3a87a995098a2ad3977f1fad877996ce08dd16723f1ad3ed67c4",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0002000.json.gz",
+      "matches": true,
+      "sha256": "8a2d116b18bb86376d9cfe290a1cade4f8409b9688346ff9a5ddf5b4d0be66e5",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0000000.json.gz",
+      "matches": true,
+      "sha256": "cabd2cae5579814c610abb4bf7fc4d08bd6bc1bc7e26081986cfdf4b476cc2fd",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0002000.json.gz",
+      "matches": true,
+      "sha256": "08414373e3c033d9aabd8f4590eab3f403a0dcfb7494d5747456c5484bf36949",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0000000.json.gz",
+      "matches": true,
+      "sha256": "17c0767f8efbcd15c6f2d15daecb7633c44cfe4a0a4556e16b3f83a71bd4ea7a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0002000.json.gz",
+      "matches": true,
+      "sha256": "81ebafed2f5193047975b295cdf359a41efc3d9b096aefad07093f15d2c8ced1",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0000000.json.gz",
+      "matches": true,
+      "sha256": "c68e77dc0568da156802eb5399362e08869b3484717996c81fc8a1281870dc6c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0002000.json.gz",
+      "matches": true,
+      "sha256": "c648ed7e554ef5d14101bc404349b3e69ab5db435a2e67f4e5326abc7fa7637e",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0000000.json.gz",
+      "matches": true,
+      "sha256": "723f7371a41281bd6356f11fc4a727c9e823a971fb8324560b042d6231cee98a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0002000.json.gz",
+      "matches": true,
+      "sha256": "e80ce18969c33f5aeac0bd46cd10d501003442c7416254163fd7c148e779f567",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0000000.json.gz",
+      "matches": true,
+      "sha256": "52fb8736329f05769beb550799f08bde56d6766f27c1c46e19d8b3e2c7012c83",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0002000.json.gz",
+      "matches": true,
+      "sha256": "1b8820a11785814b1aa044fd5ccece70dc4ac4eb5b5e74b3d50b8f0c1b1a2c73",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0000000.json.gz",
+      "matches": true,
+      "sha256": "ed7e5245902819542e96d587d0fb26034d32a91cf1c9b4c23ee3f014b9f8ebda",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0002000.json.gz",
+      "matches": true,
+      "sha256": "96e8645b53b77196b74f04e61034b8f7e78fa356c9dc51c8b2a4930cbbe61c04",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0000000.json.gz",
+      "matches": true,
+      "sha256": "e7a3499449b2575fa3ac170efdcfb3b3846b71d932ac52517cda68a0a9348763",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0002000.json.gz",
+      "matches": true,
+      "sha256": "4725196a3de306172d3f5c2ae61cebccee82c7282c5f8cda75ea0e9cdfa39a0a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0004000.json.gz",
+      "matches": true,
+      "sha256": "66ef41ffa8e63fac1c38ad94ef3f24a8e1d3789e3dfd0b513f14ff696ccb2929",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0000000.json.gz",
+      "matches": true,
+      "sha256": "32ef54b1cc6243416e9cd77597c1df761b67f0416c963c98e87965852f1a2949",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0002000.json.gz",
+      "matches": true,
+      "sha256": "dca26df92c33f83f3bb6c1f8f43902383eb6bddd69ff6cfa344343dcfe6d235b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0000000.json.gz",
+      "matches": true,
+      "sha256": "3c2c834d52aae3d13ccc4165fa5ab106263e9528cad96c6e2f4b2aa38563ea17",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0002000.json.gz",
+      "matches": true,
+      "sha256": "26b3f022b26be36f7bf5186602d9b93019da1f57cb983ded99c3bb50d0083833",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0000000.json.gz",
+      "matches": true,
+      "sha256": "b4db4b04661378bb685ee9b2de2d34800eb51a3db78490666584e0ea1ae2b40f",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0002000.json.gz",
+      "matches": true,
+      "sha256": "38aa22b4bfd889e696f50d29df160b87f8da9f6944b6c00a55663032986b1baf",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0000000.json.gz",
+      "matches": true,
+      "sha256": "1f8dc7581c76e62e51532c5cad853bf325e667a7502862828db38e40f5493336",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0002000.json.gz",
+      "matches": true,
+      "sha256": "113a351bd7b997ed253ece6921a59a9830c94231fee05c8db3818375cb6e270d",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0000000.json.gz",
+      "matches": true,
+      "sha256": "11b20134ad460822971d7be152ae21ddb0f7b9e3e7d3af8e90c43e8dd788ada6",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0002000.json.gz",
+      "matches": true,
+      "sha256": "14b8dfe4550e3c782a06a878d93a626ab0f952a23e7826b7c2cd859b8ba4ec0a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0000000.json.gz",
+      "matches": true,
+      "sha256": "4eb20e0f2e4e52ddde3e980eac5d9cd5f8f5e522cb5681c93a4a37e6316dc87c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0002000.json.gz",
+      "matches": true,
+      "sha256": "6406c6ceefe375f2d30125da9a40c2c08b95863abeaa33e98d3ba99837a5b60f",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0004000.json.gz",
+      "matches": true,
+      "sha256": "094c5c0884eeae8bba496759168ac2424cc51ed42055a8faefa8c63464223b38",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0000000.json.gz",
+      "matches": true,
+      "sha256": "4f0960aac62b8706214f6dc9f9f8544c659c0b1cbfb31d536c30ede3958f8b46",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0002000.json.gz",
+      "matches": true,
+      "sha256": "6b2e28812c193785dc76bfac3bbfc054916adfd68155dcf9aba8883fd737e3d9",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0000000.json.gz",
+      "matches": true,
+      "sha256": "d54c155d3f84900e4baccaa4efd3db0ace77c2808c77f2bddcce3421bc8628c6",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0002000.json.gz",
+      "matches": true,
+      "sha256": "e14ad89a13669295d650495956b1115c2773ac6262e489841b5b353f4328a193",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0004000.json.gz",
+      "matches": true,
+      "sha256": "d3bcdd67e8630d46e20d05aca054f0641e7c7aed8f603eb22d5a3990cd437ee9",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0000000.json.gz",
+      "matches": true,
+      "sha256": "f4c456efcb75482fd3887840b301685653ed090a04c678c186630812b8f2220a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0002000.json.gz",
+      "matches": true,
+      "sha256": "dcedfc8e5077512d79e844a1c9c1ba5c772c533ae2668cb58aaa124431f54c0f",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0000000.json.gz",
+      "matches": true,
+      "sha256": "51ba006e26bf5168902cc0d775fc172c105ce5519ace8ab01e2bb4a36d8a855c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0002000.json.gz",
+      "matches": true,
+      "sha256": "4e0f96ab000cf915a68c75af19e94d972c0bd698e2b32ac06beead29f291364a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0004000.json.gz",
+      "matches": true,
+      "sha256": "3429f8e6288daf9bf2c19ff1fe313bcf99e6335e42e6a531b0c0a908b057462b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0000000.json.gz",
+      "matches": true,
+      "sha256": "068dd398887d99cbd3883c26c34aee664ed077f54433b03415ea4008ee541e69",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0002000.json.gz",
+      "matches": true,
+      "sha256": "b5c68253e1a4342bc4944ffa0f71345ca7ecd2aff269a64ffffc612b883a62a4",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0004000.json.gz",
+      "matches": true,
+      "sha256": "cfaf4e469580567a601d131ad07a2b080685410c9a8d83827291f2dba41eb6b0",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0000000.json.gz",
+      "matches": true,
+      "sha256": "5e9cd5889836e1f7061dacd5faf50d9b29a3f6b89cf8ae3d88f6ccb7217718ed",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0002000.json.gz",
+      "matches": true,
+      "sha256": "4b642a110c7b58876da840fff22b85d8522ce22ece36ddd4fb970ad16431b3b5",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0004000.json.gz",
+      "matches": true,
+      "sha256": "cafafe0df9af2c5b8d3a1a69504c7ebd0bc1997271fafd44e26375edd89b4d78",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0000000.json.gz",
+      "matches": true,
+      "sha256": "9d5d5dbd7e34502a9c1b9e48c3eaa925a75e509d29d6a2f2035c323f5b5e1c3c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0002000.json.gz",
+      "matches": true,
+      "sha256": "8fd2ba9bb66c2563bc5c4e1bfa78c9f83bdc1a3039527efaf6c6fef9b1263f1b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0000000.json.gz",
+      "matches": true,
+      "sha256": "3bdd21a5a2dd5c8aba94b56e7962c4c5bc0957d20f5179d2f4d65d3159211b57",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0002000.json.gz",
+      "matches": true,
+      "sha256": "6362e00c2e0d4d6ffbf699703ed70e1be29561e7d5478cf1ce99d92c61c00ef4",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0000000.json.gz",
+      "matches": true,
+      "sha256": "e4587fc54401a8f12d7b46509243d67950f0ac16acb9b886339b261acfbb0f52",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0002000.json.gz",
+      "matches": true,
+      "sha256": "b23c52879265c6c43ba77f35b3b56a618d985a5b457c458da9435720e3a75083",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0000000.json.gz",
+      "matches": true,
+      "sha256": "302ba408dee5d658d255b1ee01351becfbdb1a18fe1a78398db3c46faff273c4",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0002000.json.gz",
+      "matches": true,
+      "sha256": "f728caf3f80bba68964cb29462ca1e1924cedc9e0261759f0ab904c266e75357",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0004000.json.gz",
+      "matches": true,
+      "sha256": "c37793e6acfde5f5990c7ad2cff4e6cc179c2bb68e2ceb0ed6afc0e063994d56",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0000000.json.gz",
+      "matches": true,
+      "sha256": "3b5e6a9b6e7d23970e60212882e77904dd598b0d55909e71868f75aae2e9b1b8",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0002000.json.gz",
+      "matches": true,
+      "sha256": "e2179d29ff39530570686a1a203d134cb9d634a63b84c7e1be8e96023e3836de",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0004000.json.gz",
+      "matches": true,
+      "sha256": "6e93bbd70919b502f477dbb0c1f01f41be2a10482a9698472e01fbe6d4c02007",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0000000.json.gz",
+      "matches": true,
+      "sha256": "1fba992a2280d1f9bd328cbf11559be89bc33a191a5d716b2619768c1906e97d",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0002000.json.gz",
+      "matches": true,
+      "sha256": "b1ce657dda99eaab7716d04c8ff2ec5a00f06b14ea45d3a1a6dba26698bc498b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0000000.json.gz",
+      "matches": true,
+      "sha256": "16ae4a616bf8cf34d572e683ffec55082f27d7915f59f74d8e4e19320882d548",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0002000.json.gz",
+      "matches": true,
+      "sha256": "abe182cc0ba303ae6e8c8a1f8cd84c35a41e44130744f2b0fc66915d37cbef69",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0004000.json.gz",
+      "matches": true,
+      "sha256": "093d44376c26b5a4225e325866f93cffe2e91102f3bc3a81a0c3730a478331a8",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0000000.json.gz",
+      "matches": true,
+      "sha256": "9abb5e00c32d4602f18c7f85433f081f89f03db0b7c72e7a95b27ec8099eed7c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0002000.json.gz",
+      "matches": true,
+      "sha256": "6f09699ab3896d12700a708304d27e3faf246dd8544dc2bcb72f8c14c65a08d2",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0004000.json.gz",
+      "matches": true,
+      "sha256": "1b1fbcf52663d7562b896db995be2c83a78c52371a95459bbf13de35102d8fbb",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0000000.json.gz",
+      "matches": true,
+      "sha256": "b9944b0776517747e90af2acb3de2fa9b34f6e9a878501cd272bb6689f6fe5e2",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0002000.json.gz",
+      "matches": true,
+      "sha256": "5d5b4d6895ab5ca6c5ab1da2eec629077c68fc4fda6268629b831518fe8f30ae",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0004000.json.gz",
+      "matches": true,
+      "sha256": "770dc4f0942f8667dc5b2527f6f761bc09ebe8d307e8ea75824937e386734927",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0000000.json.gz",
+      "matches": true,
+      "sha256": "ccb3a68186f4f76f87202600e72413d400aa8fa0d374a9aef4613cdeb2e60f45",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0002000.json.gz",
+      "matches": true,
+      "sha256": "e50a4c3b33252e75cef273cbff3b0977eeeead6d5e31f16ac65a64f15794bd06",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0004000.json.gz",
+      "matches": true,
+      "sha256": "128ad6a492f2e4a646e0d03fd6d6c68370c6bf1fb2912dd1195764f85458999a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0006000.json.gz",
+      "matches": true,
+      "sha256": "5530dc1aead7f9b3e491f73ef6d2f37173e92ff80c1b2bcd18bd0e2ad40d9190",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0000000.json.gz",
+      "matches": true,
+      "sha256": "6978f5cee0ad01a3da66989f48f48a7a16bb08a2920094f84a53b291c31cd401",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0002000.json.gz",
+      "matches": true,
+      "sha256": "8d0296707f13c85b4848cb7300806972fae22e1cc84aadaf508f0f404ae3df3d",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0004000.json.gz",
+      "matches": true,
+      "sha256": "bb7ec5ff84edb4585d8df8fb94d569da243cc3ca08dc33d8fb4446cf711fb2e4",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0000000.json.gz",
+      "matches": true,
+      "sha256": "2cccf6f45c7b87d38477445e2494744738e3be73cd8bc97f2f6a620084ace0a6",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0002000.json.gz",
+      "matches": true,
+      "sha256": "644242d3c52d808dc88f2073a71ea4789992d3a87ea2b2817dcf585f36f2ebe9",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0004000.json.gz",
+      "matches": true,
+      "sha256": "830f27a621542e7ea97eea82dcfb35c0f86a1229f8e05aab55c053b1ea9d707c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0006000.json.gz",
+      "matches": true,
+      "sha256": "b4f698b275d060d32b78a72d6b8d19c9ef7e147c37aed160baa592b8354ba57b",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0000000.json.gz",
+      "matches": true,
+      "sha256": "60594af69ab88b6d2df637dc2eab701675f6bdd0e7b1889ea2b2f42892167c2c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0002000.json.gz",
+      "matches": true,
+      "sha256": "a961f42afc5ed009e7e1ee50a82a41a423601d6b48a0a381dba5abbb1d657b0c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0004000.json.gz",
+      "matches": true,
+      "sha256": "cc8756f2c3e0d626595aeda0b679ef1e60135a09861380d4594127389a769f0c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0006000.json.gz",
+      "matches": true,
+      "sha256": "7c877f2caad55b2973911e075a668c9aac29c122b3def63e26819306bf02a134",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0008000.json.gz",
+      "matches": true,
+      "sha256": "fdfd9f1cfcb0be9aad10c1213cea17a5c6fe181b2a3cf6bcade790a4f2fdf22a",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0000000.json.gz",
+      "matches": true,
+      "sha256": "a705c95906bdaa71113129d19b42af01c6a9a1044abeeff0bbddca818620fabc",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0002000.json.gz",
+      "matches": true,
+      "sha256": "87b157702a68418a7e9f572d7a920eb9a4c5fe7bef1f10f577276e4cda2cc375",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0004000.json.gz",
+      "matches": true,
+      "sha256": "7bf756619fab813f581cef731da9068221a820111f66af3b52c4d9d24c0b0392",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0006000.json.gz",
+      "matches": true,
+      "sha256": "a4d696e5042008e79790d7dfb901c551c3ab6761f867d42edfcc75f0382541cf",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0008000.json.gz",
+      "matches": true,
+      "sha256": "bc00cc700b653d0692b069df3572abe4641d834ee1fab784005997a1c88d6cea",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0000000.json.gz",
+      "matches": true,
+      "sha256": "14ec7b1c800d073a51cf68aebbfe8ac294a775a267c62ae3d6a98d30f0275742",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0002000.json.gz",
+      "matches": true,
+      "sha256": "ce8e0757014a438962dbf23db6a3b036b4c7a20b8eba4068d8d69965659b651c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0004000.json.gz",
+      "matches": true,
+      "sha256": "b749810bc2a3fd5b09bf33f1a128895f3baf7fa67aaf6b0c019e42f95cc111dd",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0006000.json.gz",
+      "matches": true,
+      "sha256": "03ba5d36b3c79a56c177d5130af986beb09ef5584947a72035be719fb9af6588",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0008000.json.gz",
+      "matches": true,
+      "sha256": "fc2c694d83ca2aac5ab867c648d3bcb4dadf543df9d497369ecf6f8d9aa6f3b2",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0010000.json.gz",
+      "matches": true,
+      "sha256": "c2335eb0df17832f9bfeaf75681c0c25f8619a794005ad1223966cded5724fdf",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0012000.json.gz",
+      "matches": true,
+      "sha256": "115904cf2cc46e338916776f7c9b54a8f4f0f2413df5f23fff0f551bb0857242",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0000000.json.gz",
+      "matches": true,
+      "sha256": "2df6d5196001e3d9210877029ca66e5a9b75c0bb561f98c63da9b3352910ad98",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0002000.json.gz",
+      "matches": true,
+      "sha256": "1b982d186af625642919fd914701b5843477ae3836f23f25792c7cce77175f4e",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0004000.json.gz",
+      "matches": true,
+      "sha256": "73089000f340e9ecfaaefb91199f680e32115962f6279cbec6038d1eee50937d",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0006000.json.gz",
+      "matches": true,
+      "sha256": "4c7ce7a7657af831e0b6da8e0bc8c33d220e87784a6fc82bd8eb08fe6bed3864",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0008000.json.gz",
+      "matches": true,
+      "sha256": "abc7d72cd84423852d7d228325c525b2d14557740547fe02916c7f48f846ac7c",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0010000.json.gz",
+      "matches": true,
+      "sha256": "54d7c32789ffead7e2fda8ec2a0e621b7d5bc3712d3c1fda32ecab0cda479065",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0012000.json.gz",
+      "matches": true,
+      "sha256": "764650a51f0913dbe391d4f45ce0806622cfa5341fcfbd2fe0ee2611d649e7e5",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0014000.json.gz",
+      "matches": true,
+      "sha256": "7576bf6753b919ab3e73d5fcb74ad80afbaa0b19a3498babb9c735e8e60b2f00",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-10-0000000.json.gz",
+      "matches": true,
+      "sha256": "e9f0ccda681de62c0e0a09c6b619097e8128d1fdb4773d94f2b45f3817238e87",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/manifiesto.json",
+      "matches": true,
+      "sha256": "3e8510f66d93c670db8a28f0b99ae328831facdf0f3a9a1dae2b52f05858e979",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/cache_nvd/manifiesto.json",
+      "matches": true,
+      "sha256": "3e8510f66d93c670db8a28f0b99ae328831facdf0f3a9a1dae2b52f05858e979",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/informe_carga.json",
+      "matches": true,
+      "sha256": "b2b8094afa675c9cca81a79a97edba9debc6e6fbd96ec0894f141bd1553a8657",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/informe_carga.md",
+      "matches": true,
+      "sha256": "298e565e8e9faf42c7d902f64a7d51de3e31fb8567c5c1a89bce3b9729935fdb",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/informe_carga_20261006T035917975027Z.json",
+      "matches": true,
+      "sha256": "b2b8094afa675c9cca81a79a97edba9debc6e6fbd96ec0894f141bd1553a8657",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/respaldos/catalogo_20261006T035917975027Z.sqlite3",
+      "matches": true,
+      "sha256": "500373b81c71e2d0b186346ea0a5543d76b06eacb689f870932229a054296fbb",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/salidas/seleccion_nvd.json",
+      "matches": true,
+      "sha256": "ab3fca031852e1eabd774e6790adacd8af4676d5e332f23d76e9d1994caa4be5",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/schema.sql",
+      "matches": true,
+      "sha256": "542ff22090c76ab660f2a99dfb922250bb38b60ef2f3dfb474ed24d2cb27569f",
+      "category": "data/artifact"
+    },
+    {
+      "path": "preprosesamiento/sqlite/test_carga.py",
+      "matches": true,
+      "sha256": "88885e07d31ca5293153d155a88281d98725b14a68ec51fe92037e3d5d3ee45d",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/sqlite/test_schema.py",
+      "matches": true,
+      "sha256": "57f404eac782c0587d927e46a12dc8ba852b07ee9993c2586391e7a59e02588f",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/extracionPrubea.py",
+      "matches": false,
+      "sha256": "0046789489fd744c3a62357d9e1ecaa7c0f35ed373dd0df505410b77a0676e18",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/pruebasTemporales/prueba1.py",
+      "matches": true,
+      "sha256": "289d73f92c8ec2b6f60f09a86167e9edf4a63a778fbff1f3faa5252f9af51e7d",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/pruebasTemporales/prueba2.py",
+      "matches": true,
+      "sha256": "214adb51a449b684e961e89e0ea89b4a7ff20b9c22bd5743fc70c89519f8368b",
+      "category": "code/cache"
+    },
+    {
+      "path": "preprosesamiento/pruebasTemporales/prueba3.py",
+      "matches": true,
+      "sha256": "1091a93726d3bbd177d756ec289c58204530db386025026266573bb49f86789e",
+      "category": "code/cache"
+    }
+  ]
+}

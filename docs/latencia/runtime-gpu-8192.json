@@ -1,0 +1,107 @@
+[
+  {
+    "iteration": 0,
+    "duration_ms": 4157,
+    "status": 200,
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 559,
+      "total_tokens": 619,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 559,
+      "prompt_ms": 320.691,
+      "prompt_per_token_ms": 0.5736869409660107,
+      "prompt_per_second": 1743.110969749697,
+      "predicted_n": 60,
+      "predicted_ms": 1355.153,
+      "predicted_per_token_ms": 22.585883333333335,
+      "predicted_per_second": 44.27544343701412
+    },
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**CVE** (Common Vulnerabilities and Exposures) identifica **vulnerabilidades específicas** en software (ej: CVE-2023-1234). **CWE** (Common Weakness Enumeration) clasifica **tipos de fall"
+        }
+      }
+    ],
+    "error": null
+  },
+  {
+    "iteration": 1,
+    "duration_ms": 1404,
+    "status": 200,
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 559,
+      "total_tokens": 619,
+      "prompt_tokens_details": {
+        "cached_tokens": 558
+      }
+    },
+    "timings": {
+      "cache_n": 558,
+      "prompt_n": 1,
+      "prompt_ms": 23.011,
+      "prompt_per_token_ms": 23.011,
+      "prompt_per_second": 43.45747685889357,
+      "predicted_n": 60,
+      "predicted_ms": 1375.812,
+      "predicted_per_token_ms": 22.9302,
+      "predicted_per_second": 43.61060958910084
+    },
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**CVE** (*Common Vulnerabilities and Exposures*) identifica **vulnerabilidades específicas** en software (ej: CVE-2023-1234). **CWE** (*Common Weakness Enumeration*) clasifica **tipos de fall"
+        }
+      }
+    ],
+    "error": null
+  },
+  {
+    "iteration": 2,
+    "duration_ms": 1405,
+    "status": 200,
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 559,
+      "total_tokens": 619,
+      "prompt_tokens_details": {
+        "cached_tokens": 558
+      }
+    },
+    "timings": {
+      "cache_n": 558,
+      "prompt_n": 1,
+      "prompt_ms": 26.46,
+      "prompt_per_token_ms": 26.46,
+      "prompt_per_second": 37.79289493575208,
+      "predicted_n": 60,
+      "predicted_ms": 1373.315,
+      "predicted_per_token_ms": 22.888583333333333,
+      "predicted_per_second": 43.68990362735425
+    },
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "**CVE** (Common Vulnerabilities and Exposures) identifica **vulnerabilidades específicas** en software (ej: CVE-2023-1234). **CWE** (Common Weakness Enumeration) clasifica **tipos de fall"
+        }
+      }
+    ],
+    "error": null
+  }
+]

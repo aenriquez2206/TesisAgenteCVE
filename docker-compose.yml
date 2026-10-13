@@ -40,18 +40,29 @@ services:
     ports:
       - "8000:8000"
     environment:
-      CHROMA_HOST: chromadb
-      CHROMA_PORT: "8000"
-      CHROMA_COLLECTION: catalogo_cve_2023_2026
-      CHROMA_TENANT: default_tenant
-      CHROMA_DATABASE: default_database
-      LLM_BASE_URL: http://model-runner.docker.internal:12434/engines/v1
-      LLM_MODEL: ministral3:8B-Q4_K_M
-      EMBEDDING_MODEL: sentence-transformers/all-MiniLM-L6-v2
-      EMBEDDING_HASH: 4f148ba8ae9c2c7fbee4af2b132db8d06c6a6545b47fc83bbb98c3d22b8393e6
-      TOP_K: "8"
-      CONTEXT_CHARS: "12000"
-      CORS_ORIGINS: http://localhost:5173
+      CHROMA_HOST: ${CHROMA_HOST_DOCKER:-chromadb}
+      CHROMA_PORT: "${CHROMA_PORT_DOCKER:-8000}"
+      CHROMA_COLLECTION: ${CHROMA_COLLECTION:-catalogo_cve_2023_2026}
+      CHROMA_TENANT: ${CHROMA_TENANT:-default_tenant}
+      CHROMA_DATABASE: ${CHROMA_DATABASE:-default_database}
+      LLM_BASE_URL: ${LLM_BASE_URL_DOCKER:-http://model-runner.docker.internal:12434/engines/v1}
+      LLM_MODEL: ${LLM_MODEL:-ministral3:8B-Q4_K_M}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+      EMBEDDING_HASH: ${EMBEDDING_HASH:-4f148ba8ae9c2c7fbee4af2b132db8d06c6a6545b47fc83bbb98c3d22b8393e6}
+      EMBEDDING_TOKENIZER_HASH: ${EMBEDDING_TOKENIZER_HASH:-9114256b104cca80e04367526f03f46aa3c443c2ed174904142a73bbf13b9fbb}
+      TOP_K: "${TOP_K:-8}"
+      CONTEXT_CHARS: "${CONTEXT_CHARS:-6000}"
+      PREPARATION_TOKENS: "${PREPARATION_TOKENS:-120}"
+      ANSWER_TOKENS: "${ANSWER_TOKENS:-220}"
+      COMPARISON_TOKENS: "${COMPARISON_TOKENS:-350}"
+      COLLECTION_CACHE_SECONDS: "${COLLECTION_CACHE_SECONDS:-60}"
+      MODEL_CACHE_SECONDS: "${MODEL_CACHE_SECONDS:-60}"
+      LLM_TIMEOUT: "${LLM_TIMEOUT:-120}"
+      CHROMA_TIMEOUT: "${CHROMA_TIMEOUT:-15}"
+      HEALTH_TIMEOUT: "${HEALTH_TIMEOUT:-5}"
+      EMBEDDING_TIMEOUT: "${EMBEDDING_TIMEOUT:-30}"
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
     extra_hosts:
       - "model-runner.docker.internal:host-gateway"
     depends_on:
@@ -66,7 +77,7 @@ services:
     ports:
       - "5173:5173"
     environment:
-      VITE_API_BASE_URL: http://localhost:8000
+      VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8000}
     depends_on:
       - backend
     networks:

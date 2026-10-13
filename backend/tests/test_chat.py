@@ -32,7 +32,10 @@ class Repository:
                        metadata={"content_type": "nvd", "cve_id": "CVE-2023-27849", "base_score": 9.8},
                        cve_id="CVE-2023-27849", source="nvd", distance=0.2)]
 
-    def descriptions(self, cve_ids):
+    def descriptions(self, cve_id, kind):
+        return []
+
+    def grouped(self, cve_id, kinds):
         return []
 
 

@@ -1,0 +1,23 @@
+[
+  {
+    "Backend": "llama.cpp",
+    "Model": "docker.io/ai/ministral3:8B-Q4_K_M",
+    "ModelID": "sha256:10d946aea5750deaad15dd8476421ae846927279f9fbd28f0bfb62f15bca2867",
+    "Mode": "completion",
+    "Config": {
+      "context-size": 8192,
+      "runtime-flags": [
+        "--parallel",
+        "1",
+        "--threads",
+        "8",
+        "--no-context-shift",
+        "--n-gpu-layers",
+        "all",
+        "--cache-ram",
+        "256"
+      ],
+      "keep_alive": "1h0m0s"
+    }
+  }
+]

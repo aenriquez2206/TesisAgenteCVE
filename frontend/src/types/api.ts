@@ -20,6 +20,14 @@ export type Trace = {
   model: string
   resolved_model: string
   timings_ms: Record<string, number>
+  preparation_status?: 'complete'
+  retrieval_status?: 'complete' | 'empty'
+  generation_status?: 'complete' | 'skipped' 
+  route?: string | null
+  template_answer?: boolean
+  llm_calls?: number
+  retries?: number
+  chroma_operations?: number
 }
 
 export type ChatResponse = {
@@ -36,6 +44,7 @@ export type Health = {
   embeddings: string
   llm: string
   collection: string
+  collection_status: string
   document_count?: number
 }
 
@@ -45,6 +54,15 @@ export type Message = {
   content: string
   result?: ChatResponse
   error?: string
+  retryOf?: string
 }
 
 export type Conversation = { id: string; title: string; messages: Message[]; updatedAt: number }
+
+export type Finding = {
+  id: string; name: string; service: string; port: string; score: string; level: string
+  impact: string; fix: string
+}
+export type DetectionRun = { id: string; target: string; findings: Finding[] }
+export type SimulatedMessage = { id: string; role: 'user' | 'assistant'; content: string }
+export type SimulatedConversation = { id: string; finding: Finding; runId: string; target: string; messages: SimulatedMessage[] }
