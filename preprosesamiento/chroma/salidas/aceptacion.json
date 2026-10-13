@@ -1,0 +1,32 @@
+{
+  "validated_at": "2026-10-06T04:41:23.934+00:00",
+  "notebook_executed_code_cells": 6,
+  "notebook_errors": 0,
+  "second_execution_without_accumulation": true,
+  "document_count": 68973,
+  "cve_count": 1000,
+  "years": {
+    "2026": 250,
+    "2023": 250,
+    "2024": 250,
+    "2025": 250
+  },
+  "collections": [
+    "catalogo_cve_2023_2026"
+  ],
+  "backup_count": 1000,
+  "sqlite_unchanged": true,
+  "sqlite_counts": {
+    "NVD_CVE": 1000,
+    "MITRE_CWE": 662,
+    "MITRE_CAPEC": 559,
+    "EXPLOIT_DB": 46698,
+    "CVE_CWE": 1170,
+    "CAPEC_CWE": 1212,
+    "EXPLOIT_CVE": 7,
+    "VW_CVE_CATALOGO": 1000
+  },
+  "tests_sqlite": 26,
+  "tests_chroma": 11,
+  "dependency_check": "ok"
+}

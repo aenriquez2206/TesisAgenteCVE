@@ -1,0 +1,6 @@
+# Descargas regenerables y respaldos locales; los informes y la base se conservan.
+sqlite/salidas/cache_nvd/
+sqlite/salidas/respaldos/
+.ipynb_checkpoints/
+chroma/salidas/cargas/
+chroma/salidas/respaldos/

@@ -1,0 +1,1108 @@
+{
+  "files": [
+    {
+      "from": "procesoExtraccion/.gitignore",
+      "to": "preprosesamiento/.gitignore",
+      "bytes": 204,
+      "sha256": "18636246ab1c99e12b1f308b14cbd085a735d0e15de89e55348fb15e0a211975"
+    },
+    {
+      "from": "procesoExtraccion/README.md",
+      "to": "preprosesamiento/README.md",
+      "bytes": 9607,
+      "sha256": "2a0d3f5d8dabcd5cf6f6a52c79035cf667b0a6c0285ae503e15f1404e9472d63"
+    },
+    {
+      "from": "procesoExtraccion/cargar_catalogo.ipynb",
+      "to": "preprosesamiento/cargar_catalogo.ipynb",
+      "bytes": 56588,
+      "sha256": "dd8f19d42f575d0bbfe4eb3f71a2e945368c68b55e2c2f5f05790afac5debbef"
+    },
+    {
+      "from": "procesoExtraccion/chroma/__pycache__/indexacion.cpython-312.pyc",
+      "to": "preprosesamiento/chroma/__pycache__/indexacion.cpython-312.pyc",
+      "bytes": 39313,
+      "sha256": "39721ff82814ebdba186311542ff72252bab59818e49a8bdf661ed21e65e9ea9"
+    },
+    {
+      "from": "procesoExtraccion/chroma/__pycache__/test_indexacion.cpython-312.pyc",
+      "to": "preprosesamiento/chroma/__pycache__/test_indexacion.cpython-312.pyc",
+      "bytes": 28424,
+      "sha256": "2060f201386fab5009a33a2b700b2d2ee8b2b5512d40a7f6b2b97e5be64a3dac"
+    },
+    {
+      "from": "procesoExtraccion/chroma/ejecutar_notebook.py",
+      "to": "preprosesamiento/chroma/ejecutar_notebook.py",
+      "bytes": 1446,
+      "sha256": "40b1a9db6272e911275eec48ff0faa9a40552aa13c8bf41af709d7c043de64bb"
+    },
+    {
+      "from": "procesoExtraccion/chroma/indexacion.py",
+      "to": "preprosesamiento/chroma/indexacion.py",
+      "bytes": 23599,
+      "sha256": "a57173f62a276038f545dcfcc1e0d7300216555a316cdf54141d6cbe194a65f6"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/aceptacion.json",
+      "to": "preprosesamiento/chroma/salidas/aceptacion.json",
+      "bytes": 685,
+      "sha256": "42f43f0677d76c2aa2cade210f64ecf5801de26697cf71f3c547d7d3776d5323"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/documentos.json.gz",
+      "to": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/documentos.json.gz",
+      "bytes": 12189897,
+      "sha256": "44279cb1c0b94db6b10c1d22eb137899a320cc702560e82b846b0ad5d007d54b"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings.npy",
+      "to": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings.npy",
+      "bytes": 105942656,
+      "sha256": "450d6c1b0274ecda9ef974f33db4504843727942418cc755cd64731ba023695d"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_orden.npy",
+      "to": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_orden.npy",
+      "bytes": 551912,
+      "sha256": "ab4ec022e95b3a103cb61f2b4fe4ce386ec37e298acdfc14372e4e94ea3e944a"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_progreso.json",
+      "to": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_progreso.json",
+      "bytes": 110,
+      "sha256": "545ea30cc27f13f2a1a512f9f15d9874fb52c0792b0c189a27b42892995d6d93"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_verificados.json",
+      "to": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/embeddings_verificados.json",
+      "bytes": 120,
+      "sha256": "0d25909c5828ef2c8369a3624a209422d61f94da787dfea1b5bdf1f2ea67328e"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/estado.json",
+      "to": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/estado.json",
+      "bytes": 244,
+      "sha256": "c32ff973fb8a83d20ca04f7c1bc859b4b68df6e3dd8fd40b2280befdf15a01ba"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/informe.json",
+      "to": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/informe.json",
+      "bytes": 38075,
+      "sha256": "a86d6d30eab636b793d76f90bbb16116ace2ee5c468a986de12bec37f405261b"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/manifiesto.json",
+      "to": "preprosesamiento/chroma/salidas/cargas/04ee8166f572dec8c2f6f9e78ea3042c4786512e20cbe2f9dff2c38a3e8dd4ab/manifiesto.json",
+      "bytes": 37525,
+      "sha256": "1d9a86612739558793cb320d684de345ac6bff47789d3744fcddc179211e304f"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/documentos.json.gz",
+      "to": "preprosesamiento/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/documentos.json.gz",
+      "bytes": 12172908,
+      "sha256": "05e43f0947aaa9d0169438c68797a98b79d495291cbad9610ac6a43cbd357588"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/manifiesto.json",
+      "to": "preprosesamiento/chroma/salidas/cargas/0bac1c372e06e05b1a30fcc8f54ac040ead1c838af45027e3bdd348947662d55/manifiesto.json",
+      "bytes": 37425,
+      "sha256": "92d09d20a48b80dd27ee585804556ac58c6f0bfd8b021e0cd8901f96f1632907"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/informe_indexacion.json",
+      "to": "preprosesamiento/chroma/salidas/informe_indexacion.json",
+      "bytes": 38075,
+      "sha256": "a86d6d30eab636b793d76f90bbb16116ace2ee5c468a986de12bec37f405261b"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/coleccion.json.gz",
+      "to": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/coleccion.json.gz",
+      "bytes": 2301885,
+      "sha256": "e846741850b2b864cec5888d59c1eeac7c4e4aa6e8cc292de038cc91bb6c91f0"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/manifiesto.json",
+      "to": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T042549343074Z/manifiesto.json",
+      "bytes": 265,
+      "sha256": "03f84fa32ae4b40cc854132bcd55d75edbfa23e2f18a3aa970e226bdd49391cf"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/coleccion.json.gz",
+      "to": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/coleccion.json.gz",
+      "bytes": 2301574,
+      "sha256": "27faae60ba466d8ba1e8cc17a27211d27022a93b0ce963b148fab80cf7fa3c2b"
+    },
+    {
+      "from": "procesoExtraccion/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/manifiesto.json",
+      "to": "preprosesamiento/chroma/salidas/respaldos/nvd_cve_2023_2026_20261006T043718956338Z/manifiesto.json",
+      "bytes": 265,
+      "sha256": "4064634211ae1eb73de76af72c06b2a2658e60ea8a18f406174da43ca3e5d81d"
+    },
+    {
+      "from": "procesoExtraccion/chroma/test_indexacion.py",
+      "to": "preprosesamiento/chroma/test_indexacion.py",
+      "bytes": 12185,
+      "sha256": "fb2a5a1767642456da0deb36b94bb7533d2ed8d1cda5b147c52adb3f931cb58e"
+    },
+    {
+      "from": "procesoExtraccion/indexar_chroma.ipynb",
+      "to": "preprosesamiento/indexar_chroma.ipynb",
+      "bytes": 12541,
+      "sha256": "4c6a1bd94757d0593bc5782611239e999d0ff6d06f6b8470d78eb862a536df33"
+    },
+    {
+      "from": "procesoExtraccion/requirements.txt",
+      "to": "preprosesamiento/requirements.txt",
+      "bytes": 176,
+      "sha256": "3952aaf94c5fd3334b9df2be794c07178aa9a18897647258afa2b5e659f2d65a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/README.md",
+      "to": "preprosesamiento/sqlite/README.md",
+      "bytes": 3962,
+      "sha256": "c30d5c40f72d962ae5af8c0e22b62916aac08f33a425f5b63f3c925188858529"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/__pycache__/carga_catalogo.cpython-312.pyc",
+      "to": "preprosesamiento/sqlite/__pycache__/carga_catalogo.cpython-312.pyc",
+      "bytes": 48092,
+      "sha256": "66dcf5c55a36f0ca34ccc04ee28ac5cf24cbf53761650594426c16ad4d14bf1c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/__pycache__/crear_base.cpython-312.pyc",
+      "to": "preprosesamiento/sqlite/__pycache__/crear_base.cpython-312.pyc",
+      "bytes": 5265,
+      "sha256": "863b97bf7666aab5aa5721a67ef086eeb3ffd9061a73052284290d03616f211f"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/__pycache__/revisar_fuentes.cpython-312.pyc",
+      "to": "preprosesamiento/sqlite/__pycache__/revisar_fuentes.cpython-312.pyc",
+      "bytes": 15969,
+      "sha256": "950b14f1bfc1201e5f0dc71002a193fef503b822287312b46fe96cc44860873c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/__pycache__/test_carga.cpython-312.pyc",
+      "to": "preprosesamiento/sqlite/__pycache__/test_carga.cpython-312.pyc",
+      "bytes": 33378,
+      "sha256": "b6839ac027e04f429f68a3d380cf77ebb78252617e439d170c522b5ed4adc7b6"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/__pycache__/test_schema.cpython-312.pyc",
+      "to": "preprosesamiento/sqlite/__pycache__/test_schema.cpython-312.pyc",
+      "bytes": 19669,
+      "sha256": "affca75243d81563d9d010e49bd4a8b6fe4e6ddc54f3eefdc7d8af37bacea24a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/carga_catalogo.py",
+      "to": "preprosesamiento/sqlite/carga_catalogo.py",
+      "bytes": 31279,
+      "sha256": "864ef4590db573faf686122b7859b56cb14011dfbff1638117def159b5e067c9"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/catalogo.sqlite3",
+      "to": "preprosesamiento/sqlite/catalogo.sqlite3",
+      "bytes": 10874880,
+      "sha256": "f3bd2331f33e110782b116bb60d1d27ff77b8bbb51601578657da08c5cefb985"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/consultas.sql",
+      "to": "preprosesamiento/sqlite/consultas.sql",
+      "bytes": 2723,
+      "sha256": "abbac2cd19e4e5a53a8c3a697aea2ff96b91157f277effbe815c39bf4174efa8"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/crear_base.py",
+      "to": "preprosesamiento/sqlite/crear_base.py",
+      "bytes": 3125,
+      "sha256": "170fbab1ef42f1a931b2c33cad70370c5fbb70bbe4ced34681dbb70c1afd84e0"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/diccionario_datos.md",
+      "to": "preprosesamiento/sqlite/diccionario_datos.md",
+      "bytes": 7272,
+      "sha256": "3c94396617ca19df8590efee1e81e36f0ac74ad9e08d50b2d4ae304deb854d79"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/ejecutar_notebook.py",
+      "to": "preprosesamiento/sqlite/ejecutar_notebook.py",
+      "bytes": 1447,
+      "sha256": "43466958d785163c6d08f3d306b4cd2ae57d8307a962904739ce26bf98a2bf4c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/fuentes/NVDExample.json",
+      "to": "preprosesamiento/sqlite/fuentes/NVDExample.json",
+      "bytes": 39957,
+      "sha256": "44802bbaabe6106d96550fe1c5a8ca52869b815f165822ecb235cf88b3febf92"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/fuentes/capec.csv",
+      "to": "preprosesamiento/sqlite/fuentes/capec.csv",
+      "bytes": 1433640,
+      "sha256": "6ba3971aefee4c2ce4d29c2b50b85acab15016133f1f60a765229d780af4f44f"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/fuentes/cwe_hardware.csv",
+      "to": "preprosesamiento/sqlite/fuentes/cwe_hardware.csv",
+      "bytes": 387292,
+      "sha256": "54fed63711677c2e7aed1164844da5ca2377cc7fac4d5e09e6ffad8c77d17b27"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/fuentes/cwe_software.csv",
+      "to": "preprosesamiento/sqlite/fuentes/cwe_software.csv",
+      "bytes": 1394999,
+      "sha256": "f4a30c7eaf1c8a4a6045b3be48571f74ee6e23cdbd768e3c40f48f5e67e02101"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/fuentes/files_exploits.csv",
+      "to": "preprosesamiento/sqlite/fuentes/files_exploits.csv",
+      "bytes": 10182721,
+      "sha256": "49ed79cb1bf0878931793318485d21cdc947f1d91ef8accbd09d5d4bf99991b8"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/informe_revision.md",
+      "to": "preprosesamiento/sqlite/informe_revision.md",
+      "bytes": 10006,
+      "sha256": "90b6eec6a608fb7646e6acd44d81ab58cb3921406cb1bb5a61f73ee35b171a41"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/revisar_fuentes.py",
+      "to": "preprosesamiento/sqlite/revisar_fuentes.py",
+      "bytes": 9446,
+      "sha256": "7457f28063fd46d4f4e09a1ca46c1dc057863ea95c3c47acf6f982f1fcb6708a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/revision_fuentes.json",
+      "to": "preprosesamiento/sqlite/revision_fuentes.json",
+      "bytes": 27654,
+      "sha256": "1c100b3f48d1122d8ff9af67f25a616b05d2ce0d9d267b664de0c2b863799a00"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0000000.json.gz",
+      "bytes": 1095718,
+      "sha256": "142e7cc6b5037a914b470f9c40f312f0d9ef38ddc6c417d581e00617ca45096c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-01-0002000.json.gz",
+      "bytes": 294325,
+      "sha256": "083dbedf404671a64be8f4a6d00afb732ed82e7161d94e62b2800cc9e1344515"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0000000.json.gz",
+      "bytes": 1119178,
+      "sha256": "98b981e285bd2b59ae8a63c39c58d014b88897e7e85c19b8e880d40ee4cbf35d"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-02-0002000.json.gz",
+      "bytes": 95264,
+      "sha256": "83b086e7fbc629c82679651c8b6d41c8803d88fbd748a03b85815cbe78346757"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0000000.json.gz",
+      "bytes": 1015516,
+      "sha256": "f0dba05f2272a5b8922c037eb4528bd130d745051daf8925cd3bd71ec96e3811"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-03-0002000.json.gz",
+      "bytes": 221486,
+      "sha256": "d93775aa78963de5619aa0bf033d8863a5901170c26b63064878ba430ee5008d"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0000000.json.gz",
+      "bytes": 935747,
+      "sha256": "e2c3c3cc72f4a41ca3225e86c88a918dfa0376e24fce44f72a8e143541ca4897"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-04-0002000.json.gz",
+      "bytes": 183326,
+      "sha256": "c07dec19b59e7076609f5c6bba380f0ece9e7c1b3ca6abd75fd11b15da9fa6cc"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0000000.json.gz",
+      "bytes": 993479,
+      "sha256": "8b17431adfdcadc3163764ed97385dc5c46d24b213e0321b7f0127f87ffa1e07"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-05-0002000.json.gz",
+      "bytes": 232851,
+      "sha256": "da0b89856eee64e4b74ae6a5997b30f73f9572359ac0c20319586021be542f4b"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0000000.json.gz",
+      "bytes": 2133651,
+      "sha256": "d7ef208806da331d3272e60fe01162fa3e28cafdcf9efee8c7e91680f98f4cb7"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-06-0002000.json.gz",
+      "bytes": 150421,
+      "sha256": "029d95c6e9a994b8349c8850ffbbe0ffa5d515007f2e23698136a8e82f38b0e5"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0000000.json.gz",
+      "bytes": 898920,
+      "sha256": "378406f94eaa7ac24db2e74a76fea6cfc3c4a20d4717d4f8acc0dc0298792907"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-07-0002000.json.gz",
+      "bytes": 182051,
+      "sha256": "550b2e0689115cc4e0120c9be5cafbea89f074fccacd572d77f3d1eefabe8a29"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0000000.json.gz",
+      "bytes": 1307999,
+      "sha256": "fa6d9fe10b9aef3cf90069b367aab6160ad55fd3481b725529c9a36d35ff5761"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-08-0002000.json.gz",
+      "bytes": 211769,
+      "sha256": "3e01373f445052204097ea082dca122babe07178e6ce0d364aa2331c7b624245"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0000000.json.gz",
+      "bytes": 943220,
+      "sha256": "ec3945aabea43fed95e9a6d0b4c368a8d61b2218d4d34ef8f792ccdc39b13c72"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-09-0002000.json.gz",
+      "bytes": 466863,
+      "sha256": "09b2cb48e4622c3152b1421752efcb8e9aa0fb2140a82e2a8c903abc33ac6930"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0000000.json.gz",
+      "bytes": 1235699,
+      "sha256": "87ec61faae2c3a87a995098a2ad3977f1fad877996ce08dd16723f1ad3ed67c4"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-10-0002000.json.gz",
+      "bytes": 287876,
+      "sha256": "8a2d116b18bb86376d9cfe290a1cade4f8409b9688346ff9a5ddf5b4d0be66e5"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0000000.json.gz",
+      "bytes": 1557541,
+      "sha256": "cabd2cae5579814c610abb4bf7fc4d08bd6bc1bc7e26081986cfdf4b476cc2fd"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-11-0002000.json.gz",
+      "bytes": 200913,
+      "sha256": "08414373e3c033d9aabd8f4590eab3f403a0dcfb7494d5747456c5484bf36949"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0000000.json.gz",
+      "bytes": 1263570,
+      "sha256": "17c0767f8efbcd15c6f2d15daecb7633c44cfe4a0a4556e16b3f83a71bd4ea7a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2023-12-0002000.json.gz",
+      "bytes": 249874,
+      "sha256": "81ebafed2f5193047975b295cdf359a41efc3d9b096aefad07093f15d2c8ced1"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0000000.json.gz",
+      "bytes": 1168529,
+      "sha256": "c68e77dc0568da156802eb5399362e08869b3484717996c81fc8a1281870dc6c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-01-0002000.json.gz",
+      "bytes": 301023,
+      "sha256": "c648ed7e554ef5d14101bc404349b3e69ab5db435a2e67f4e5326abc7fa7637e"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0000000.json.gz",
+      "bytes": 1226921,
+      "sha256": "723f7371a41281bd6356f11fc4a727c9e823a971fb8324560b042d6231cee98a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-02-0002000.json.gz",
+      "bytes": 610864,
+      "sha256": "e80ce18969c33f5aeac0bd46cd10d501003442c7416254163fd7c148e779f567"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0000000.json.gz",
+      "bytes": 1269147,
+      "sha256": "52fb8736329f05769beb550799f08bde56d6766f27c1c46e19d8b3e2c7012c83"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-03-0002000.json.gz",
+      "bytes": 788866,
+      "sha256": "1b8820a11785814b1aa044fd5ccece70dc4ac4eb5b5e74b3d50b8f0c1b1a2c73"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0000000.json.gz",
+      "bytes": 1205203,
+      "sha256": "ed7e5245902819542e96d587d0fb26034d32a91cf1c9b4c23ee3f014b9f8ebda"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-04-0002000.json.gz",
+      "bytes": 864609,
+      "sha256": "96e8645b53b77196b74f04e61034b8f7e78fa356c9dc51c8b2a4930cbbe61c04"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0000000.json.gz",
+      "bytes": 1013334,
+      "sha256": "e7a3499449b2575fa3ac170efdcfb3b3846b71d932ac52517cda68a0a9348763"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0002000.json.gz",
+      "bytes": 1302988,
+      "sha256": "4725196a3de306172d3f5c2ae61cebccee82c7282c5f8cda75ea0e9cdfa39a0a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-05-0004000.json.gz",
+      "bytes": 719903,
+      "sha256": "66ef41ffa8e63fac1c38ad94ef3f24a8e1d3789e3dfd0b513f14ff696ccb2929"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0000000.json.gz",
+      "bytes": 884303,
+      "sha256": "32ef54b1cc6243416e9cd77597c1df761b67f0416c963c98e87965852f1a2949"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-06-0002000.json.gz",
+      "bytes": 812853,
+      "sha256": "dca26df92c33f83f3bb6c1f8f43902383eb6bddd69ff6cfa344343dcfe6d235b"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0000000.json.gz",
+      "bytes": 1448960,
+      "sha256": "3c2c834d52aae3d13ccc4165fa5ab106263e9528cad96c6e2f4b2aa38563ea17"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-07-0002000.json.gz",
+      "bytes": 635575,
+      "sha256": "26b3f022b26be36f7bf5186602d9b93019da1f57cb983ded99c3bb50d0083833"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0000000.json.gz",
+      "bytes": 1394235,
+      "sha256": "b4db4b04661378bb685ee9b2de2d34800eb51a3db78490666584e0ea1ae2b40f"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-08-0002000.json.gz",
+      "bytes": 699944,
+      "sha256": "38aa22b4bfd889e696f50d29df160b87f8da9f6944b6c00a55663032986b1baf"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0000000.json.gz",
+      "bytes": 1381000,
+      "sha256": "1f8dc7581c76e62e51532c5cad853bf325e667a7502862828db38e40f5493336"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-09-0002000.json.gz",
+      "bytes": 416949,
+      "sha256": "113a351bd7b997ed253ece6921a59a9830c94231fee05c8db3818375cb6e270d"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0000000.json.gz",
+      "bytes": 1018683,
+      "sha256": "11b20134ad460822971d7be152ae21ddb0f7b9e3e7d3af8e90c43e8dd788ada6"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-10-0002000.json.gz",
+      "bytes": 1338549,
+      "sha256": "14b8dfe4550e3c782a06a878d93a626ab0f952a23e7826b7c2cd859b8ba4ec0a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0000000.json.gz",
+      "bytes": 1065386,
+      "sha256": "4eb20e0f2e4e52ddde3e980eac5d9cd5f8f5e522cb5681c93a4a37e6316dc87c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0002000.json.gz",
+      "bytes": 885239,
+      "sha256": "6406c6ceefe375f2d30125da9a40c2c08b95863abeaa33e98d3ba99837a5b60f"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-11-0004000.json.gz",
+      "bytes": 38543,
+      "sha256": "094c5c0884eeae8bba496759168ac2424cc51ed42055a8faefa8c63464223b38"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0000000.json.gz",
+      "bytes": 772551,
+      "sha256": "4f0960aac62b8706214f6dc9f9f8544c659c0b1cbfb31d536c30ede3958f8b46"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2024-12-0002000.json.gz",
+      "bytes": 860601,
+      "sha256": "6b2e28812c193785dc76bfac3bbfc054916adfd68155dcf9aba8883fd737e3d9"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0000000.json.gz",
+      "bytes": 767175,
+      "sha256": "d54c155d3f84900e4baccaa4efd3db0ace77c2808c77f2bddcce3421bc8628c6"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0002000.json.gz",
+      "bytes": 853961,
+      "sha256": "e14ad89a13669295d650495956b1115c2773ac6262e489841b5b353f4328a193"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-01-0004000.json.gz",
+      "bytes": 177925,
+      "sha256": "d3bcdd67e8630d46e20d05aca054f0641e7c7aed8f603eb22d5a3990cd437ee9"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0000000.json.gz",
+      "bytes": 1372034,
+      "sha256": "f4c456efcb75482fd3887840b301685653ed090a04c678c186630812b8f2220a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-02-0002000.json.gz",
+      "bytes": 1423364,
+      "sha256": "dcedfc8e5077512d79e844a1c9c1ba5c772c533ae2668cb58aaa124431f54c0f"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0000000.json.gz",
+      "bytes": 968082,
+      "sha256": "51ba006e26bf5168902cc0d775fc172c105ce5519ace8ab01e2bb4a36d8a855c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0002000.json.gz",
+      "bytes": 830112,
+      "sha256": "4e0f96ab000cf915a68c75af19e94d972c0bd698e2b32ac06beead29f291364a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-03-0004000.json.gz",
+      "bytes": 36675,
+      "sha256": "3429f8e6288daf9bf2c19ff1fe313bcf99e6335e42e6a531b0c0a908b057462b"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0000000.json.gz",
+      "bytes": 1058603,
+      "sha256": "068dd398887d99cbd3883c26c34aee664ed077f54433b03415ea4008ee541e69"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0002000.json.gz",
+      "bytes": 846620,
+      "sha256": "b5c68253e1a4342bc4944ffa0f71345ca7ecd2aff269a64ffffc612b883a62a4"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-04-0004000.json.gz",
+      "bytes": 64088,
+      "sha256": "cfaf4e469580567a601d131ad07a2b080685410c9a8d83827291f2dba41eb6b0"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0000000.json.gz",
+      "bytes": 1451791,
+      "sha256": "5e9cd5889836e1f7061dacd5faf50d9b29a3f6b89cf8ae3d88f6ccb7217718ed"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0002000.json.gz",
+      "bytes": 775528,
+      "sha256": "4b642a110c7b58876da840fff22b85d8522ce22ece36ddd4fb970ad16431b3b5"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-05-0004000.json.gz",
+      "bytes": 114511,
+      "sha256": "cafafe0df9af2c5b8d3a1a69504c7ebd0bc1997271fafd44e26375edd89b4d78"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0000000.json.gz",
+      "bytes": 871152,
+      "sha256": "9d5d5dbd7e34502a9c1b9e48c3eaa925a75e509d29d6a2f2035c323f5b5e1c3c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-06-0002000.json.gz",
+      "bytes": 1027008,
+      "sha256": "8fd2ba9bb66c2563bc5c4e1bfa78c9f83bdc1a3039527efaf6c6fef9b1263f1b"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0000000.json.gz",
+      "bytes": 1302895,
+      "sha256": "3bdd21a5a2dd5c8aba94b56e7962c4c5bc0957d20f5179d2f4d65d3159211b57"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-07-0002000.json.gz",
+      "bytes": 899405,
+      "sha256": "6362e00c2e0d4d6ffbf699703ed70e1be29561e7d5478cf1ce99d92c61c00ef4"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0000000.json.gz",
+      "bytes": 1009643,
+      "sha256": "e4587fc54401a8f12d7b46509243d67950f0ac16acb9b886339b261acfbb0f52"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-08-0002000.json.gz",
+      "bytes": 843456,
+      "sha256": "b23c52879265c6c43ba77f35b3b56a618d985a5b457c458da9435720e3a75083"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0000000.json.gz",
+      "bytes": 849255,
+      "sha256": "302ba408dee5d658d255b1ee01351becfbdb1a18fe1a78398db3c46faff273c4"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0002000.json.gz",
+      "bytes": 1259601,
+      "sha256": "f728caf3f80bba68964cb29462ca1e1924cedc9e0261759f0ab904c266e75357"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-09-0004000.json.gz",
+      "bytes": 183292,
+      "sha256": "c37793e6acfde5f5990c7ad2cff4e6cc179c2bb68e2ceb0ed6afc0e063994d56"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0000000.json.gz",
+      "bytes": 1026939,
+      "sha256": "3b5e6a9b6e7d23970e60212882e77904dd598b0d55909e71868f75aae2e9b1b8"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0002000.json.gz",
+      "bytes": 752616,
+      "sha256": "e2179d29ff39530570686a1a203d134cb9d634a63b84c7e1be8e96023e3836de"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-10-0004000.json.gz",
+      "bytes": 153445,
+      "sha256": "6e93bbd70919b502f477dbb0c1f01f41be2a10482a9698472e01fbe6d4c02007"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0000000.json.gz",
+      "bytes": 747974,
+      "sha256": "1fba992a2280d1f9bd328cbf11559be89bc33a191a5d716b2619768c1906e97d"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-11-0002000.json.gz",
+      "bytes": 387423,
+      "sha256": "b1ce657dda99eaab7716d04c8ff2ec5a00f06b14ea45d3a1a6dba26698bc498b"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0000000.json.gz",
+      "bytes": 877331,
+      "sha256": "16ae4a616bf8cf34d572e683ffec55082f27d7915f59f74d8e4e19320882d548"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0002000.json.gz",
+      "bytes": 813146,
+      "sha256": "abe182cc0ba303ae6e8c8a1f8cd84c35a41e44130744f2b0fc66915d37cbef69"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2025-12-0004000.json.gz",
+      "bytes": 948665,
+      "sha256": "093d44376c26b5a4225e325866f93cffe2e91102f3bc3a81a0c3730a478331a8"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0000000.json.gz",
+      "bytes": 951201,
+      "sha256": "9abb5e00c32d4602f18c7f85433f081f89f03db0b7c72e7a95b27ec8099eed7c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0002000.json.gz",
+      "bytes": 967343,
+      "sha256": "6f09699ab3896d12700a708304d27e3faf246dd8544dc2bcb72f8c14c65a08d2"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-01-0004000.json.gz",
+      "bytes": 678988,
+      "sha256": "1b1fbcf52663d7562b896db995be2c83a78c52371a95459bbf13de35102d8fbb"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0000000.json.gz",
+      "bytes": 1039687,
+      "sha256": "b9944b0776517747e90af2acb3de2fa9b34f6e9a878501cd272bb6689f6fe5e2"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0002000.json.gz",
+      "bytes": 967919,
+      "sha256": "5d5b4d6895ab5ca6c5ab1da2eec629077c68fc4fda6268629b831518fe8f30ae"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-02-0004000.json.gz",
+      "bytes": 513917,
+      "sha256": "770dc4f0942f8667dc5b2527f6f761bc09ebe8d307e8ea75824937e386734927"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0000000.json.gz",
+      "bytes": 1161592,
+      "sha256": "ccb3a68186f4f76f87202600e72413d400aa8fa0d374a9aef4613cdeb2e60f45"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0002000.json.gz",
+      "bytes": 1187313,
+      "sha256": "e50a4c3b33252e75cef273cbff3b0977eeeead6d5e31f16ac65a64f15794bd06"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0004000.json.gz",
+      "bytes": 1121814,
+      "sha256": "128ad6a492f2e4a646e0d03fd6d6c68370c6bf1fb2912dd1195764f85458999a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0006000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-03-0006000.json.gz",
+      "bytes": 186221,
+      "sha256": "5530dc1aead7f9b3e491f73ef6d2f37173e92ff80c1b2bcd18bd0e2ad40d9190"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0000000.json.gz",
+      "bytes": 1151365,
+      "sha256": "6978f5cee0ad01a3da66989f48f48a7a16bb08a2920094f84a53b291c31cd401"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0002000.json.gz",
+      "bytes": 855195,
+      "sha256": "8d0296707f13c85b4848cb7300806972fae22e1cc84aadaf508f0f404ae3df3d"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-04-0004000.json.gz",
+      "bytes": 940147,
+      "sha256": "bb7ec5ff84edb4585d8df8fb94d569da243cc3ca08dc33d8fb4446cf711fb2e4"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0000000.json.gz",
+      "bytes": 1246179,
+      "sha256": "2cccf6f45c7b87d38477445e2494744738e3be73cd8bc97f2f6a620084ace0a6"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0002000.json.gz",
+      "bytes": 867099,
+      "sha256": "644242d3c52d808dc88f2073a71ea4789992d3a87ea2b2817dcf585f36f2ebe9"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0004000.json.gz",
+      "bytes": 1094910,
+      "sha256": "830f27a621542e7ea97eea82dcfb35c0f86a1229f8e05aab55c053b1ea9d707c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0006000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-05-0006000.json.gz",
+      "bytes": 461510,
+      "sha256": "b4f698b275d060d32b78a72d6b8d19c9ef7e147c37aed160baa592b8354ba57b"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0000000.json.gz",
+      "bytes": 1095916,
+      "sha256": "60594af69ab88b6d2df637dc2eab701675f6bdd0e7b1889ea2b2f42892167c2c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0002000.json.gz",
+      "bytes": 848119,
+      "sha256": "a961f42afc5ed009e7e1ee50a82a41a423601d6b48a0a381dba5abbb1d657b0c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0004000.json.gz",
+      "bytes": 805279,
+      "sha256": "cc8756f2c3e0d626595aeda0b679ef1e60135a09861380d4594127389a769f0c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0006000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0006000.json.gz",
+      "bytes": 753256,
+      "sha256": "7c877f2caad55b2973911e075a668c9aac29c122b3def63e26819306bf02a134"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0008000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-06-0008000.json.gz",
+      "bytes": 1486,
+      "sha256": "fdfd9f1cfcb0be9aad10c1213cea17a5c6fe181b2a3cf6bcade790a4f2fdf22a"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0000000.json.gz",
+      "bytes": 877011,
+      "sha256": "a705c95906bdaa71113129d19b42af01c6a9a1044abeeff0bbddca818620fabc"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0002000.json.gz",
+      "bytes": 633838,
+      "sha256": "87b157702a68418a7e9f572d7a920eb9a4c5fe7bef1f10f577276e4cda2cc375"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0004000.json.gz",
+      "bytes": 928715,
+      "sha256": "7bf756619fab813f581cef731da9068221a820111f66af3b52c4d9d24c0b0392"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0006000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0006000.json.gz",
+      "bytes": 622130,
+      "sha256": "a4d696e5042008e79790d7dfb901c551c3ab6761f867d42edfcc75f0382541cf"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0008000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-07-0008000.json.gz",
+      "bytes": 547491,
+      "sha256": "bc00cc700b653d0692b069df3572abe4641d834ee1fab784005997a1c88d6cea"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0000000.json.gz",
+      "bytes": 1013054,
+      "sha256": "14ec7b1c800d073a51cf68aebbfe8ac294a775a267c62ae3d6a98d30f0275742"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0002000.json.gz",
+      "bytes": 852762,
+      "sha256": "ce8e0757014a438962dbf23db6a3b036b4c7a20b8eba4068d8d69965659b651c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0004000.json.gz",
+      "bytes": 975699,
+      "sha256": "b749810bc2a3fd5b09bf33f1a128895f3baf7fa67aaf6b0c019e42f95cc111dd"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0006000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0006000.json.gz",
+      "bytes": 452690,
+      "sha256": "03ba5d36b3c79a56c177d5130af986beb09ef5584947a72035be719fb9af6588"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0008000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0008000.json.gz",
+      "bytes": 756921,
+      "sha256": "fc2c694d83ca2aac5ab867c648d3bcb4dadf543df9d497369ecf6f8d9aa6f3b2"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0010000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0010000.json.gz",
+      "bytes": 632387,
+      "sha256": "c2335eb0df17832f9bfeaf75681c0c25f8619a794005ad1223966cded5724fdf"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0012000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-08-0012000.json.gz",
+      "bytes": 258896,
+      "sha256": "115904cf2cc46e338916776f7c9b54a8f4f0f2413df5f23fff0f551bb0857242"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0000000.json.gz",
+      "bytes": 779067,
+      "sha256": "2df6d5196001e3d9210877029ca66e5a9b75c0bb561f98c63da9b3352910ad98"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0002000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0002000.json.gz",
+      "bytes": 472070,
+      "sha256": "1b982d186af625642919fd914701b5843477ae3836f23f25792c7cce77175f4e"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0004000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0004000.json.gz",
+      "bytes": 855990,
+      "sha256": "73089000f340e9ecfaaefb91199f680e32115962f6279cbec6038d1eee50937d"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0006000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0006000.json.gz",
+      "bytes": 471751,
+      "sha256": "4c7ce7a7657af831e0b6da8e0bc8c33d220e87784a6fc82bd8eb08fe6bed3864"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0008000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0008000.json.gz",
+      "bytes": 1123491,
+      "sha256": "abc7d72cd84423852d7d228325c525b2d14557740547fe02916c7f48f846ac7c"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0010000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0010000.json.gz",
+      "bytes": 714099,
+      "sha256": "54d7c32789ffead7e2fda8ec2a0e621b7d5bc3712d3c1fda32ecab0cda479065"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0012000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0012000.json.gz",
+      "bytes": 947826,
+      "sha256": "764650a51f0913dbe391d4f45ce0806622cfa5341fcfbd2fe0ee2611d649e7e5"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0014000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-09-0014000.json.gz",
+      "bytes": 277416,
+      "sha256": "7576bf6753b919ab3e73d5fcb74ad80afbaa0b19a3498babb9c735e8e60b2f00"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-10-0000000.json.gz",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/2026-10-0000000.json.gz",
+      "bytes": 455031,
+      "sha256": "e9f0ccda681de62c0e0a09c6b619097e8128d1fdb4773d94f2b45f3817238e87"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/20261006T034316289604Z/manifiesto.json",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/20261006T034316289604Z/manifiesto.json",
+      "bytes": 42865,
+      "sha256": "3e8510f66d93c670db8a28f0b99ae328831facdf0f3a9a1dae2b52f05858e979"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/cache_nvd/manifiesto.json",
+      "to": "preprosesamiento/sqlite/salidas/cache_nvd/manifiesto.json",
+      "bytes": 42865,
+      "sha256": "3e8510f66d93c670db8a28f0b99ae328831facdf0f3a9a1dae2b52f05858e979"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/informe_carga.json",
+      "to": "preprosesamiento/sqlite/salidas/informe_carga.json",
+      "bytes": 627884,
+      "sha256": "b2b8094afa675c9cca81a79a97edba9debc6e6fbd96ec0894f141bd1553a8657"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/informe_carga.md",
+      "to": "preprosesamiento/sqlite/salidas/informe_carga.md",
+      "bytes": 861,
+      "sha256": "298e565e8e9faf42c7d902f64a7d51de3e31fb8567c5c1a89bce3b9729935fdb"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/informe_carga_20261006T035917975027Z.json",
+      "to": "preprosesamiento/sqlite/salidas/informe_carga_20261006T035917975027Z.json",
+      "bytes": 627884,
+      "sha256": "b2b8094afa675c9cca81a79a97edba9debc6e6fbd96ec0894f141bd1553a8657"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/respaldos/catalogo_20261006T035917975027Z.sqlite3",
+      "to": "preprosesamiento/sqlite/salidas/respaldos/catalogo_20261006T035917975027Z.sqlite3",
+      "bytes": 86016,
+      "sha256": "500373b81c71e2d0b186346ea0a5543d76b06eacb689f870932229a054296fbb"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/salidas/seleccion_nvd.json",
+      "to": "preprosesamiento/sqlite/salidas/seleccion_nvd.json",
+      "bytes": 28292,
+      "sha256": "ab3fca031852e1eabd774e6790adacd8af4676d5e332f23d76e9d1994caa4be5"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/schema.sql",
+      "to": "preprosesamiento/sqlite/schema.sql",
+      "bytes": 6575,
+      "sha256": "542ff22090c76ab660f2a99dfb922250bb38b60ef2f3dfb474ed24d2cb27569f"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/test_carga.py",
+      "to": "preprosesamiento/sqlite/test_carga.py",
+      "bytes": 18089,
+      "sha256": "88885e07d31ca5293153d155a88281d98725b14a68ec51fe92037e3d5d3ee45d"
+    },
+    {
+      "from": "procesoExtraccion/sqlite/test_schema.py",
+      "to": "preprosesamiento/sqlite/test_schema.py",
+      "bytes": 11402,
+      "sha256": "57f404eac782c0587d927e46a12dc8ba852b07ee9993c2586391e7a59e02588f"
+    },
+    {
+      "from": "extracionPrubea.py",
+      "to": "preprosesamiento/extracionPrubea.py",
+      "bytes": 1269,
+      "sha256": "0b13af30b37982f9dc8f77c13dc0f8ef53f145a20c55303c1d4f92e5d1efa873"
+    },
+    {
+      "from": "pruebasTemporales/prueba1.py",
+      "to": "preprosesamiento/pruebasTemporales/prueba1.py",
+      "bytes": 184,
+      "sha256": "289d73f92c8ec2b6f60f09a86167e9edf4a63a778fbff1f3faa5252f9af51e7d"
+    },
+    {
+      "from": "pruebasTemporales/prueba2.py",
+      "to": "preprosesamiento/pruebasTemporales/prueba2.py",
+      "bytes": 511,
+      "sha256": "214adb51a449b684e961e89e0ea89b4a7ff20b9c22bd5743fc70c89519f8368b"
+    },
+    {
+      "from": "pruebasTemporales/prueba3.py",
+      "to": "preprosesamiento/pruebasTemporales/prueba3.py",
+      "bytes": 255,
+      "sha256": "1091a93726d3bbd177d756ec289c58204530db386025026266573bb49f86789e"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+services:
+
+  chromadb:
+    image: chromadb/chroma:1.5.0
+    container_name: chromadb
+    restart: unless-stopped
+
+    ports:
+      - "8001:8000"
+
+    volumes:
+      - ./chroma_data:/data
+      - ./config.yaml:/config.yaml:ro
+
+    networks:
+      - chroma-network
+
+
+  chromadb-ui:
+    build:
+      context: ./chromadb-ui
+      dockerfile: Dockerfile
+
+    container_name: chromadb-ui
+    restart: unless-stopped
+
+    ports:
+      - "8090:80"
+
+    depends_on:
+      - chromadb
+
+    networks:
+      - chroma-network
+
+  backend:
+    build:
+      context: ./backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      CHROMA_HOST: chromadb
+      CHROMA_PORT: "8000"
+      CHROMA_COLLECTION: catalogo_cve_2023_2026
+      CHROMA_TENANT: default_tenant
+      CHROMA_DATABASE: default_database
+      LLM_BASE_URL: http://model-runner.docker.internal:12434/engines/v1
+      LLM_MODEL: ministral3:8B-Q4_K_M
+      EMBEDDING_MODEL: sentence-transformers/all-MiniLM-L6-v2
+      EMBEDDING_HASH: 4f148ba8ae9c2c7fbee4af2b132db8d06c6a6545b47fc83bbb98c3d22b8393e6
+      TOP_K: "8"
+      CONTEXT_CHARS: "12000"
+      CORS_ORIGINS: http://localhost:5173
+    extra_hosts:
+      - "model-runner.docker.internal:host-gateway"
+    depends_on:
+      - chromadb
+    networks:
+      - chroma-network
+
+  frontend:
+    build:
+      context: ./frontend
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_BASE_URL: http://localhost:8000
+    depends_on:
+      - backend
+    networks:
+      - chroma-network
+
+
+networks:
+  chroma-network:
+    driver: bridge
